@@ -1,0 +1,10 @@
+# Ignore tudo por padrao
+*
+
+# Mantem os arquivos de configuracao de ignore
+!.gitignore
+!.ignore
+
+# Mantem somente a pasta agente
+!agente/
+!agente/**
