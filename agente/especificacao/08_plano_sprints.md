@@ -72,6 +72,7 @@ Entregas:
 - Orquestração entre agente de notícias e agente decisor.
 - Loop de tool calling com limite de iteração por agente.
 - Prompt de sistema com regras de transparência e segurança.
+- Governança dos artefatos de execução em `agente/data/` para testes do time (manter snapshots de referência e evitar ruído em commits de código).
 
 Critérios de pronto:
 

@@ -17,7 +17,7 @@ Documentar um plano de execução incremental, em sprints, para implementar o tr
 
 ## Referência reaproveitada
 
-Foi adotado como base o approach já validado em [referencia/agente](referencia/agente):
+Foi adotado como base o approach já validado em [referencia/agente/especificacao/01_visao_geral.md](../../referencia/agente/especificacao/01_visao_geral.md):
 
 - Orquestração por tool calling
 - Ferramentas separadas por responsabilidade
