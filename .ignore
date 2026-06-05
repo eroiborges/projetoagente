@@ -8,3 +8,9 @@
 # Mantem somente a pasta agente
 !agente/
 !agente/**
+
+# Mantem documentacao de referencia especifica
+!referencia/
+!referencia/agente/
+!referencia/agente/especificacao/
+!referencia/agente/especificacao/**

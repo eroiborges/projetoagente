@@ -2,6 +2,8 @@
 
 ## Sprint 0 - Alinhamento e setup
 
+Status: CONCLUIDA
+
 Objetivo: fechar decisões abertas e preparar base do projeto.
 
 Entregas:
@@ -10,14 +12,19 @@ Entregas:
 - Estrutura de pastas em `agente/` com separação por agentes, tools e pipelines.
 - requirements.txt inicial.
 - Checklist de fontes e variáveis de ambiente do Azure AI Foundry.
+- Definição de modo de execução único com duas formas de disparo: on-demand e agendável.
+- Definição de escopo de execução por parâmetro: todos os tickers ou ticker único.
 
 Critérios de pronto:
 
 - Projeto executa localmente.
 - Decisões de stack e escopo documentadas.
 - Configuração é reparametrizável para outro ambiente sem alterar código.
+- Backtest definido como trilha completa, iniciando com versão mínima e incrementos nas sprints seguintes.
 
 ## Sprint 1 - Pipeline de mercado e indicadores
+
+Status: CONCLUIDA
 
 Objetivo: obter sinal técnico confiável por ticker.
 
@@ -25,13 +32,19 @@ Entregas:
 
 - Coleta OHLCV com yfinance.
 - Cálculo de RSI, MACD, SMA/EMA, Bollinger e volume médio.
-- Persistência da tabela technical_indicators.
+- Persistência em JSON de snapshots e histórico técnico com deduplicação por ticker+data+modo.
+- Status operacional por ticker para mercado/notícias com fallback seguro.
 - Testes básicos de consistência temporal.
 
 Critérios de pronto:
 
 - Todos os 4 ativos com indicadores calculados para a data de referência.
 - Sem falhas em execução repetida no mesmo dia.
+
+Resultado da sprint:
+
+- Pipeline técnico real funcional para os ativos alvo com fallback por ticker sem interromper o lote.
+- Contratos de dados e persistência técnica validados por testes automatizados.
 
 ## Sprint 2 - Notícias e sentimento
 
@@ -76,6 +89,7 @@ Entregas:
 - confidence_score por recomendação.
 - Rationale padronizado com evidências rastreáveis.
 - Registro diário em arquivo estruturado.
+- Primeira versão funcional de backtest (mínima) para validar direção da estratégia.
 
 Critérios de pronto:
 
@@ -92,6 +106,7 @@ Entregas:
 - Ajustes de robustez e mensagens de erro.
 - Documento final de execução e limitações.
 - Roteiro de apresentação.
+- Evolução do backtest para versão completa com métricas consolidadas.
 
 Critérios de pronto:
 

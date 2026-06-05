@@ -1,0 +1,338 @@
+[
+  {
+    "ticker": "VALE3",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=48.2, sentimento=positive (pos=3, neg=2, neu=1).",
+    "generated_at": "2026-06-05T01:22:58Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=56.4, sentimento=neutral (pos=2, neg=2, neu=0).",
+    "generated_at": "2026-06-05T01:22:58Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=48.2, sentimento=positive (pos=3, neg=2, neu=1).",
+    "generated_at": "2026-06-05T01:22:58Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=56.4, sentimento=neutral (pos=2, neg=2, neu=0).",
+    "generated_at": "2026-06-05T01:22:58Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=positive (pos=3, neg=2, neu=1).",
+    "generated_at": "2026-06-05T01:33:19Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=2, neg=2, neu=0).",
+    "generated_at": "2026-06-05T01:33:19Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=1, neg=1, neu=2).",
+    "generated_at": "2026-06-05T01:33:19Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=negative (pos=1, neg=3, neu=1).",
+    "generated_at": "2026-06-05T01:33:19Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=positive (pos=3, neg=2, neu=1).",
+    "generated_at": "2026-06-05T01:38:00Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=2, neg=2, neu=0).",
+    "generated_at": "2026-06-05T01:38:00Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=1, neg=1, neu=2).",
+    "generated_at": "2026-06-05T01:38:00Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=negative (pos=1, neg=3, neu=1).",
+    "generated_at": "2026-06-05T01:38:00Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:15:06Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:15:07Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:15:07Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:15:08Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:16:19Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:16:20Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:16:20Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:16:21Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:43:31Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=0, neg=0, neu=3).",
+    "generated_at": "2026-06-05T02:43:31Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=0, neg=0, neu=3).",
+    "generated_at": "2026-06-05T02:43:31Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=1).",
+    "generated_at": "2026-06-05T02:43:32Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
+    "generated_at": "2026-06-05T02:48:13Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=14).",
+    "generated_at": "2026-06-05T02:48:15Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
+    "generated_at": "2026-06-05T02:48:16Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
+    "generated_at": "2026-06-05T02:48:17Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
+    "generated_at": "2026-06-05T02:49:41Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=14).",
+    "generated_at": "2026-06-05T02:49:42Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
+    "generated_at": "2026-06-05T02:49:42Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
+    "generated_at": "2026-06-05T02:49:43Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
+    "generated_at": "2026-06-05T02:52:47Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=14).",
+    "generated_at": "2026-06-05T02:52:48Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
+    "generated_at": "2026-06-05T02:52:49Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
+    "generated_at": "2026-06-05T02:52:51Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
+    "generated_at": "2026-06-05T03:06:20Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=13).",
+    "generated_at": "2026-06-05T03:06:22Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
+    "generated_at": "2026-06-05T03:06:23Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
+    "generated_at": "2026-06-05T03:06:24Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=48.2, sentimento=positive (pos=3, neg=2, neu=1).",
+    "generated_at": "2026-06-05T03:07:10Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=56.4, sentimento=neutral (pos=2, neg=2, neu=0).",
+    "generated_at": "2026-06-05T03:07:10Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=neutral, RSI=51.0, sentimento=neutral (pos=1, neg=1, neu=2).",
+    "generated_at": "2026-06-05T03:07:10Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "VENDER",
+    "confidence": 0.75,
+    "rationale": "MACD=bearish, RSI=43.3, sentimento=negative (pos=1, neg=3, neu=1).",
+    "generated_at": "2026-06-05T03:07:10Z"
+  },
+  {
+    "ticker": "VALE3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.65,
+    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
+    "generated_at": "2026-06-05T03:07:33Z"
+  },
+  {
+    "ticker": "PETR4",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=13).",
+    "generated_at": "2026-06-05T03:07:34Z"
+  },
+  {
+    "ticker": "BBAS3",
+    "recommendation": "AGUARDAR",
+    "confidence": 0.55,
+    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
+    "generated_at": "2026-06-05T03:07:34Z"
+  },
+  {
+    "ticker": "ITUB4",
+    "recommendation": "COMPRAR",
+    "confidence": 0.75,
+    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
+    "generated_at": "2026-06-05T03:07:35Z"
+  }
+]

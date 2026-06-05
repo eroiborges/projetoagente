@@ -8,3 +8,22 @@
 # Mantem somente a pasta agente
 !agente/
 !agente/**
+
+# Mantem documentacao de referencia especifica
+!referencia/
+!referencia/agente/
+!referencia/agente/especificacao/
+!referencia/agente/especificacao/**
+
+# Nunca versionar segredos de ambiente
+agente/.env
+agente/**/.env
+agente/**/.env.*
+
+# Nunca versionar cache/bytecode Python
+**/__pycache__/
+**/*.pyc
+
+# Permitir exemplos de configuracao
+!agente/.env.example
+!agente/**/.env.example

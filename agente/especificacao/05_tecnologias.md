@@ -13,7 +13,19 @@
 
 ## Indicadores técnicos
 
-- pandas-ta (preferencial para MVP)
+- pandas-ta-classic
+
+## Fontes de notícias (Sprint 1)
+
+- InfoMoney RSS direto.
+- B3 via Google News RSS com filtro de domínio `b3.com.br`.
+- Reuters via Google News RSS com filtro `reuters.com` para business/stocks.
+- Feed dinâmico Google News por ticker para reduzir casos de `no_matching_news`.
+
+Observação:
+
+- TradingView é usado como fonte de leitura externa por ticker no app (link clicável), sem ingestão automática nesta fase.
+- O link TradingView aparece junto da linha de recomendação para acesso rápido em nova aba.
 
 ## Agente e LLM
 

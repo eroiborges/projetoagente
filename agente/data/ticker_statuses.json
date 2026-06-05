@@ -1,0 +1,266 @@
+[
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": ""
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": ""
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": ""
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": ""
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": ""
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": ""
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "warning_real_no_match",
+    "notes": "no_matching_news"
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "warning_real_no_match",
+    "notes": "no_matching_news"
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "warning_real_no_match",
+    "notes": "no_matching_news"
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "warning_real_no_match",
+    "notes": "no_matching_news"
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "warning_real_no_match",
+    "notes": "no_matching_news"
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "warning_real_no_match",
+    "notes": "no_matching_news"
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "warning_real_no_match",
+    "notes": "no_matching_news"
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "warning_real_no_match",
+    "notes": "no_matching_news"
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "warning_real_no_match",
+    "notes": "no_matching_news"
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds"
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 11
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 15
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 28
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 5
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 11
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 15
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 28
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 5
+  }
+]

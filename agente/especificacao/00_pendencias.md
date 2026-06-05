@@ -2,23 +2,28 @@
 
 ## Pendências de escopo
 
-- Definir formato de entrega do MVP: app Streamlit, notebook, ou híbrido.
-- Definir frequência de execução da análise: diária em batch e/ou sob demanda.
-- Definir escopo de backtest para a entrega acadêmica (mínimo viável).
+- Nenhuma pendência crítica de escopo para Sprint 0.
 
 ## Pendências técnicas
 
-- Definir modelo inicial no Azure AI Foundry para cada agente.
-- Escolher biblioteca de indicadores: pandas-ta ou TA-Lib.
-- Definir fonte de notícias principal para estabilidade (InfoMoney, B3, Reuters via RSS).
-- Definir formato de persistência do histórico de recomendações (CSV, SQLite, JSONL).
+- Nenhuma pendência técnica crítica de Sprint 0.
 
 ## Decisões já tomadas
 
-- A estrutura principal do projeto fica em `agente/` na raiz de `materialAula`.
+- A estrutura principal do projeto fica em agente na raiz do workspace.
 - O projeto terá mais de um agente funcional (mínimo dois).
 - LLMs e inferência serão feitos via Azure AI Foundry.
 - Endpoint, chaves e deployment ficarão em arquivo de configuração para reparametrização por ambiente.
+- Formato de entrega do MVP: app Streamlit.
+- Execução: on-demand e modo agendável com o mesmo código.
+- Execução por escopo: todos os tickers ou apenas um ticker selecionado.
+- Modelo inicial sugerido no Foundry: gpt-5.4-mini para agentes de notícias e decisão.
+- Fontes de notícias: InfoMoney, B3 e Reuters, sem prioridade fixa.
+- Regra de consenso de sentimento: empate sem consenso (ex: 50/50) deve resultar em neutro.
+- Persistência inicial: JSON.
+- Biblioteca de indicadores definida: pandas-ta.
+- Backtest será completo, iniciado de forma incremental ao longo das sprints.
+- Sprint 0 executa com dados mockados para acelerar setup e validação do fluxo.
 
 ## Riscos principais
 
