@@ -1,50 +1,33 @@
-# 04 - Componentes do Sistema
+# 04 - Componentes
 
-## Estrutura proposta
+## Estrutura implementada
 
-- app/main.py: interface conversacional.
-- app/orchestrator.py: coordenação do fluxo entre agentes.
-- app/agents/news_agent.py: agente de notícias e sentimento.
-- app/agents/trading_agent.py: agente decisor de compra/venda/aguardar.
-- app/tools/news_tool.py: coleta e sumarização de notícias.
-- app/tools/market_tool.py: coleta de preços históricos.
-- app/tools/indicator_tool.py: cálculo de indicadores.
-- app/tools/recommendation_tool.py: recomendação e justificativa.
-- app/pipelines/daily_job.py: execução diária ponta a ponta.
-- app/storage/repository.py: leitura e persistência de análises.
-- app/config/settings.py: carregamento de configurações por ambiente.
-- app/prompts/system_prompt.py: regras de comportamento do agente.
-- tests/: testes unitários e de integração.
+- `app/main.py`: interface Streamlit com execucao, tabela, status, backtest e chat.
+- `app/pipelines/run_analysis.py`: pipeline principal e contrato de retorno.
+- `app/agents/decision_agent.py`: regra de recomendacao e evidencia.
+- `app/agents/explainer_agent.py`: respostas do chat por intencao.
+- `app/agents/system_prompt.py`: prompt de sistema do explicador.
+- `app/tools/market_tool.py`: coleta de mercado e indicadores.
+- `app/tools/news_tool.py`: coleta/classificacao de noticias.
+- `app/tools/insight_tools.py`: leitura de contexto para respostas explicativas.
+- `app/tools/backtest_tool.py`: backtest e metricas.
+- `app/storage/json_store.py`: append com deduplicacao.
+- `app/domain/models.py`: dataclasses de dominio.
 
-## Responsabilidades por componente
+## Testes implementados
 
-### Coleta de mercado
+- `tests/test_market_tool.py`
+- `tests/test_news_tool.py`
+- `tests/test_json_store.py`
+- `tests/test_pipeline_integration.py`
+- `tests/test_explainer_agent.py`
+- `tests/test_backtest_tool.py`
+- `tests/test_demo_sprint5.py`
 
-- Ler OHLCV por ticker e período.
-- Tratar dados faltantes.
-- Garantir ordenação temporal.
+## Responsabilidades resumidas
 
-### Coleta de notícias
-
-- Ler RSS por fonte.
-- Relacionar notícia a ticker por matching simples e palavras-chave.
-- Classificar sentimento e impacto.
-
-### Motor de análise
-
-- Calcular indicadores técnicos.
-- Consolidar sinais técnicos e sentimento.
-- Gerar score de confiança da recomendação.
-
-### Camada de agentes
-
-- Separar responsabilidades por agente (análise e decisão).
-- Decidir quando chamar cada tool por etapa.
-- Construir resposta em linguagem natural e explicável.
-- Expor trilha de decisão resumida e auditável.
-
-### Orquestração
-
-- Encadear execução dos agentes na ordem correta.
-- Garantir contrato de dados entre saída de análise e entrada de decisão.
-- Registrar status de execução e falhas por etapa.
+- Pipeline: orquestrar coleta, decisao e consolidacao.
+- Agente decisor: transformar sinais em recomendacao.
+- Agente explicador: responder perguntas do usuario com base nos dados do dia.
+- Backtest: medir desempenho da estrategia com dados historicos persistidos.
+- App: expor experiencia de demonstracao ponta a ponta.

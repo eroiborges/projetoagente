@@ -1,77 +1,68 @@
 # 03 - Modelo de Dados
 
-## Entidades principais
+## Contratos principais implementados
 
-### price_snapshot
+### Recommendation
 
-Dados de mercado por ticker e data.
+- `ticker`
+- `recommendation` (`COMPRAR`, `VENDER`, `AGUARDAR`)
+- `confidence` (0 a 1)
+- `rationale`
+- `generated_at`
+- `evidence` (scores, fatores e gatilhos)
 
-Campos sugeridos:
+### RecommendationRecord
 
-- ticker
-- date
-- open
-- high
-- low
-- close
-- volume
+- Campos da recomendacao final
+- `data_mode`
+- `market_status`
+- `news_status`
+- `matched_news_count`
+- `news_sentiment_score`
+- `avg_impact_score`
+- `evidence`
 
-### technical_indicators
+### TechnicalSnapshot e TechnicalHistoryPoint
 
-Indicadores calculados por ticker e data.
+- `ticker`, `date`
+- OHLCV (`open`, `high`, `low`, `close`, `volume`)
+- Indicadores (`rsi`, `macd_value`, `macd_signal_value`, `macd_signal`, `sma_20`, `ema_20`, `bb_upper`, `bb_lower`, `bb_mid`, `volume_avg_20`)
+- `data_mode`
 
-Campos sugeridos:
+### NewsItem
 
-- ticker
-- date
-- rsi
-- macd
-- macd_signal
-- sma_20
-- ema_20
-- bb_upper
-- bb_lower
-- bb_mid
-- volume_avg_20
+- `ticker`, `source`, `published_at`
+- `title`, `url`, `summary`
+- `sentiment_label`, `sentiment_score`, `impact_score`
+- `data_mode`
 
-### news_items
+### TickerRunStatus
 
-Notícias coletadas e classificadas.
+- `ticker`
+- `market_status`, `news_status`
+- `notes`
+- `matched_news_count`
+- `news_sentiment_score`
+- `avg_impact_score`
 
-Campos sugeridos:
+### RunResult
 
-- ticker
-- source
-- published_at
-- title
-- url
-- summary
-- sentiment_label
-- sentiment_score
-- impact_score
+Agregado da execucao com:
 
-### daily_analysis
+- `recommendations`
+- `recommendation_records`
+- `technical_snapshots`
+- `technical_history`
+- `news_items`
+- `ticker_statuses`
 
-Consolidação diária dos sinais.
+## Persistencia em JSON
 
-Campos sugeridos:
+Arquivos finais em `data/`:
 
-- ticker
-- date
-- technical_signal
-- sentiment_signal
-- confidence_score
-- recommendation
-- rationale
-
-## Exemplo de saída final
-
-{
-  "ticker": "VALE3",
-  "date": "2026-05-31",
-  "close": 61.42,
-  "rsi": 45.2,
-  "macd_signal": "bullish",
-  "news_sentiment": 0.72,
-  "recommendation": "COMPRAR"
-}
+- `recommendations.json`
+- `recommendation_records.json`
+- `technical_snapshots.json`
+- `technical_history.json`
+- `news_items.json`
+- `ticker_statuses.json`

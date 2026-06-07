@@ -66,3 +66,23 @@ def test_news_signal_real_ticker_feed_match(monkeypatch) -> None:
     assert notes == "live_feeds"
     assert signal.consensus == "positive"
     assert signal.positive >= 1
+
+
+def test_news_analysis_returns_structured_items(monkeypatch) -> None:
+    def fake_parse(url: str):
+        if "search?q=" in url and "itub4" in url.lower():
+            return _FakeFeed([_FakeEntry("ITUB4 sobe com lucro recorde", "resultado e dividendo")])
+        return _FakeFeed([])
+
+    monkeypatch.setattr(news_tool.feedparser, "parse", fake_parse)
+
+    signal, status, notes, matched, items = news_tool.get_news_analysis("ITUB4", data_mode="real")
+    assert status == "ok_real"
+    assert notes == "live_feeds"
+    assert matched >= 1
+    assert len(items) >= 1
+    assert items[0].ticker == "ITUB4"
+    assert items[0].data_mode == "real"
+    assert items[0].sentiment_label in {"positive", "negative", "neutral"}
+    assert 0.0 <= items[0].impact_score <= 1.0
+    assert signal.consensus == "positive"

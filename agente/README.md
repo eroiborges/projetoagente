@@ -1,124 +1,126 @@
-# Projeto Agente - Sprint 1
+# Projeto Agente
 
-Base inicial do projeto com arquitetura multiagente, app Streamlit e pipeline unico para execucao on-demand ou agendavel, com escopo por ticker unico ou todos os tickers.
+Aplicacao em Streamlit para analise de ativos com recomendacao explicavel baseada em sinais tecnicos e noticias.
 
-## Como executar
+Ativos alvo:
 
-1. Ative o ambiente virtual na raiz do workspace.
-2. Instale dependencias:
+- VALE3
+- PETR4
+- BBAS3
+- ITUB4
+
+## Execucao
+
+1. Instalar dependencias:
 
 ```bash
 cd /agent/agente
 /agent/.venv/bin/python -m pip install -r requirements.txt
 ```
 
-3. Rode o app:
+2. Executar a aplicacao:
 
 ```bash
 cd /agent/agente
 /agent/.venv/bin/streamlit run app/main.py
 ```
 
-## Estado Atual
+3. Executar bateria principal de testes:
 
-- Dados em modo mock (padrao)
-- Persistencia JSON em data/recommendations.json
-- Persistencia tecnica JSON em data/technical_snapshots.json
-- Historico tecnico consolidado em data/technical_history.json
-- Status operacional por ticker em data/ticker_statuses.json
-- Noticias em modo real via RSS (InfoMoney, B3, Reuters) com fallback seguro
-- Fontes RSS estaveis em modo real:
-	- InfoMoney: https://www.infomoney.com.br/feed/
-	- B3 (via Google News RSS): https://news.google.com/rss/search?q=B3+site:b3.com.br&hl=pt-BR&gl=BR&ceid=BR:pt-419
-	- Reuters (via Google News RSS): https://news.google.com/rss/search?q=site:reuters.com+business+stocks&hl=en-US&gl=US&ceid=US:en
-- Feed dinamico por ticker (Google News) para aumentar cobertura de noticias por ativo (ex.: ITUB4)
-- .env usado apenas para secrets/credenciais (ex.: endpoint e API key)
-- Parametros da aplicacao (feeds, tickers, limites e defaults) centralizados em app/config/settings.py
-- Coleta de mercado real com indicadores tecnicos (RSI, MACD, SMA/EMA, Bollinger, volume medio)
-- Pipeline com fallback por ticker e status operacional por execucao
-- Testes automatizados passando para mercado, noticias, pipeline e persistencia
-- App com link clicavel por ticker para abrir pagina da TradingView em nova aba
-- Link da TradingView exibido ao lado de cada recomendacao na tabela principal
+```bash
+cd /agent/agente
+/agent/.venv/bin/pytest -q
+```
 
-## Parametros da Aplicacao (settings.py)
+## Estrutura atual
 
-Arquivo de referencia: app/config/settings.py
+- `app/main.py`: interface Streamlit (pipeline, tabela de recomendacoes, backtest, chat).
+- `app/pipelines/run_analysis.py`: orquestracao ponta a ponta.
+- `app/agents/decision_agent.py`: decisao final de recomendacao.
+- `app/agents/explainer_agent.py`: respostas explicativas no chat.
+- `app/agents/system_prompt.py`: regras do agente explicador.
+- `app/tools/market_tool.py`: coleta e snapshot tecnico.
+- `app/tools/news_tool.py`: coleta e consolidacao de noticias/sentimento.
+- `app/tools/insight_tools.py`: contexto para respostas do chat.
+- `app/tools/backtest_tool.py`: backtest a partir de registros persistidos.
+- `app/storage/json_store.py`: persistencia JSON com deduplicacao.
+- `app/domain/models.py`: contratos de dados.
 
-1. azure_openai_endpoint
-- Tipo: string
-- Descricao: endpoint do Azure OpenAI/Foundry.
-- Valor esperado: URL HTTPS valida.
+## Fluxo funcional
 
-2. azure_openai_api_key
-- Tipo: string (secreto)
-- Descricao: chave da API do recurso Azure.
-- Valor esperado: chave valida do recurso.
+1. Usuario escolhe modo de execucao e escopo de tickers.
+2. Pipeline gera recomendacoes com evidencias por ticker.
+3. Resultados sao persistidos em JSON na pasta `data/`.
+4. App exibe tabela de recomendacoes, status por ticker e painel de backtest.
+5. Chat responde perguntas de explicacao com base no resultado da ultima execucao.
 
-3. azure_openai_deployment_news
-- Tipo: string
-- Descricao: deployment usado para etapa de noticias/sentimento.
-- Valor atual: gpt-5.4-mini
+## Parametros principais
 
-4. azure_openai_deployment_trading
-- Tipo: string
-- Descricao: deployment usado para etapa de decisao de trading.
-- Valor atual: gpt-5.4-mini
+Arquivo de referencia: `app/config/settings.py`
 
-5. azure_openai_api_version
-- Tipo: string
-- Descricao: versao da API Azure OpenAI.
-- Valor atual: 2024-12-01-preview
+- `app_default_data_mode`: `mock` ou `real`.
+- `app_default_execution_mode`: `on_demand` ou `scheduled`.
+- `app_default_tickers`: lista CSV de tickers.
+- `app_market_period`: janela de historico para coleta de mercado.
+- `app_news_limit_per_ticker`: limite por fonte/ticker na etapa de noticias.
+- `app_tradingview_symbol_base`: base do link por ticker.
+- `azure_openai_*`: configuracao do provedor para etapas com modelo.
 
-6. app_default_data_mode
-- Tipo: string
-- Valores possiveis: mock, real
-- Valor padrao: mock
+## Arquivos de saida
 
-7. app_default_execution_mode
-- Tipo: string
-- Valores possiveis: on_demand, scheduled
-- Valor padrao: on_demand
+Persistidos em `data/`:
 
-8. app_default_tickers
-- Tipo: string (CSV)
-- Formato: TICKER1,TICKER2,...
-- Exemplo: VALE3,PETR4,BBAS3,ITUB4
+- `recommendations.json`
+- `recommendation_records.json`
+- `technical_snapshots.json`
+- `technical_history.json`
+- `news_items.json`
+- `ticker_statuses.json`
 
-9. app_market_period
-- Tipo: string
-- Descricao: janela de historico para yfinance.
-- Valores comuns: 1mo, 3mo, 6mo, 1y, 2y, 5y
-- Valor padrao: 6mo
+## Contratos importantes
 
-10. app_news_limit_per_ticker
-- Tipo: inteiro
-- Descricao: limite de itens lidos por feed para cada ativo.
-- Valor recomendado: inteiro maior que 0
-- Valor padrao: 30
+- Recomendacao: `COMPRAR`, `VENDER`, `AGUARDAR`.
+- `confidence`: intervalo `[0, 1]`.
+- `evidence`: inclui `technical_score`, `news_score`, `total_score`, fatores e gatilhos.
+- `market_status`: `ok_real`, `ok_mock`, `error_real_fallback`.
+- `news_status`: `ok_real`, `ok_mock`, `warning_real_partial`, `warning_real_no_match`, `error_real_fallback`.
 
-11. app_feed_infomoney
-- Tipo: string (URL)
-- Descricao: feed RSS principal InfoMoney.
+## Chat
 
-12. app_feed_b3
-- Tipo: string (URL)
-- Descricao: feed RSS estavel para noticias da B3 (via Google News).
+Intencoes suportadas:
 
-13. app_feed_reuters
-- Tipo: string (URL)
-- Descricao: feed RSS estavel para Reuters business/stocks (via Google News).
+- por que
+- o que mudaria
+- qual o risco
+- resumo
+- noticias
+- tecnico
+- comparacao entre tickers
 
-14. app_feed_google_news_ticker_template
-- Tipo: string (URL template)
-- Descricao: feed dinamico por ticker.
-- Regra: deve conter o placeholder {query}.
+## Backtest
 
-15. app_tradingview_symbol_base
-- Tipo: string (URL base)
-- Descricao: base para montar link do TradingView por ticker.
-- Exemplo valido: https://br.tradingview.com/symbols/BMFBOVESPA
+O backtest utiliza `recommendation_records.json` + `technical_history.json`.
 
-Observacao:
+Retorno principal:
 
-- Apenas secrets devem ficar no .env.
-- Parametros de aplicacao permanecem centralizados no settings.py.
+- `rows`: linhas avaliadas.
+- `summary`: total de sinais, sinais avaliados, acertos, hit rate e retorno medio.
+- `by_ticker`: resumo por ativo.
+- `window`: janela aplicada.
+- `errors`: validacoes de janela/arquivo quando aplicavel.
+- `diagnostics`: contagem de motivos para ausencia de linhas (quando houver).
+
+## Entrega academica
+
+Documentacao final em `especificacao/`:
+
+- `01_visao_geral.md`
+- `02_arquitetura.md`
+- `03_modelo_dados.md`
+- `04_componentes.md`
+- `05_tecnologias.md`
+- `06_fluxos.md`
+- `07_mvp_escopo.md`
+- `08_plano_sprints.md`
+- `09_execucao_final_limitacoes.md`
+- `10_roteiro_apresentacao.md`

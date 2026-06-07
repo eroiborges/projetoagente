@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 
 
@@ -26,6 +26,23 @@ class Recommendation:
     confidence: float
     rationale: str
     generated_at: str
+    evidence: dict[str, object] = field(default_factory=dict)
+
+
+@dataclass
+class RecommendationRecord:
+    ticker: str
+    recommendation: str
+    confidence: float
+    rationale: str
+    generated_at: str
+    data_mode: str
+    market_status: str
+    news_status: str
+    matched_news_count: int
+    news_sentiment_score: float
+    avg_impact_score: float
+    evidence: dict[str, object] = field(default_factory=dict)
 
 
 @dataclass
@@ -73,12 +90,28 @@ class TechnicalHistoryPoint:
 
 
 @dataclass
+class NewsItem:
+    ticker: str
+    source: str
+    published_at: str
+    title: str
+    url: str
+    summary: str
+    sentiment_label: str
+    sentiment_score: float
+    impact_score: float
+    data_mode: str
+
+
+@dataclass
 class TickerRunStatus:
     ticker: str
     market_status: str
     news_status: str
     notes: str
     matched_news_count: int
+    news_sentiment_score: float
+    avg_impact_score: float
 
 
 @dataclass
@@ -86,7 +119,9 @@ class RunResult:
     recommendations: list[Recommendation]
     technical_snapshots: list[TechnicalSnapshot]
     technical_history: list[TechnicalHistoryPoint]
+    news_items: list[NewsItem]
     ticker_statuses: list[TickerRunStatus]
+    recommendation_records: list[RecommendationRecord] = field(default_factory=list)
 
 
 def utc_now_iso() -> str:

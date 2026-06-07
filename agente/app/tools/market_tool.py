@@ -21,7 +21,7 @@ MOCK_MARKET = {
         "rsi": 48.2,
         "macd_value": 0.18,
         "macd_signal_value": 0.11,
-        "macd_signal": "bullish",
+        "macd_signal": "alta",
         "sma_20": 60.9,
         "ema_20": 61.1,
         "bb_upper": 63.0,
@@ -38,7 +38,7 @@ MOCK_MARKET = {
         "rsi": 56.4,
         "macd_value": 0.22,
         "macd_signal_value": 0.19,
-        "macd_signal": "bullish",
+        "macd_signal": "alta",
         "sma_20": 35.5,
         "ema_20": 35.8,
         "bb_upper": 37.1,
@@ -55,7 +55,7 @@ MOCK_MARKET = {
         "rsi": 51.0,
         "macd_value": 0.03,
         "macd_signal_value": 0.03,
-        "macd_signal": "neutral",
+        "macd_signal": "neutro",
         "sma_20": 28.6,
         "ema_20": 28.7,
         "bb_upper": 29.6,
@@ -72,7 +72,7 @@ MOCK_MARKET = {
         "rsi": 43.3,
         "macd_value": -0.09,
         "macd_signal_value": -0.03,
-        "macd_signal": "bearish",
+        "macd_signal": "baixa",
         "sma_20": 34.2,
         "ema_20": 34.1,
         "bb_upper": 35.0,
@@ -162,7 +162,7 @@ def _get_technical_snapshot_mock(ticker: str, reported_data_mode: str = "mock") 
             "rsi": 50.0,
             "macd_value": 0.0,
             "macd_signal_value": 0.0,
-            "macd_signal": "neutral",
+            "macd_signal": "neutro",
             "sma_20": 0.0,
             "ema_20": 0.0,
             "bb_upper": 0.0,
@@ -287,11 +287,11 @@ def _get_technical_history_real(ticker: str) -> list[TechnicalHistoryPoint]:
         macd_value = _value_at(macd_df, idx, "MACD_12_26_9", 0.0)
         macd_signal_value = _value_at(macd_df, idx, "MACDs_12_26_9", 0.0)
         if macd_value > macd_signal_value:
-            macd_signal = "bullish"
+            macd_signal = "alta"
         elif macd_value < macd_signal_value:
-            macd_signal = "bearish"
+            macd_signal = "baixa"
         else:
-            macd_signal = "neutral"
+            macd_signal = "neutro"
 
         rows.append(
             TechnicalHistoryPoint(

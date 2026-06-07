@@ -1,25 +1,26 @@
-# 07 - Escopo do MVP
+# 07 - Escopo da Entrega
 
-## Dentro do MVP
+## Escopo entregue
 
-1. Coleta de preços históricos por yfinance para VALE3, PETR4, BBAS3, ITUB4.
-2. Coleta de notícias via RSS e classificação de sentimento.
-3. Cálculo de RSI, MACD, SMA/EMA, Bollinger e volume médio.
-4. Agente com pelo menos 3 tools funcionais.
-5. Recomendação COMPRAR/VENDER/AGUARDAR com justificativa.
-6. Interface conversacional básica para consulta e explicação.
-7. Registro diário de saída para auditoria acadêmica.
+1. Coleta de mercado para VALE3, PETR4, BBAS3 e ITUB4.
+2. Coleta de noticias com sentimento e impacto por ticker.
+3. Indicadores tecnicos (RSI, MACD, SMA/EMA, Bollinger, volume medio).
+4. Recomendacao `COMPRAR`, `VENDER`, `AGUARDAR` com `confidence`, `rationale` e `evidence`.
+5. Persistencia estruturada dos resultados em JSON.
+6. Chat explicativo com intents de por que, mudanca, risco, resumo, noticias, tecnico e comparacao.
+7. Backtest minimo com resumo agregado e por ticker, incluindo validacoes de janela.
+8. Testes unitarios, integracao e bateria de demo.
 
-## Fora do MVP
+## Fora de escopo
 
-- Broker integration para executar ordens.
-- Estratégia de rebalanceamento de carteira com alocação ótima.
-- Painel avançado com autenticação multiusuário.
+- Execucao automatica de ordens reais.
+- Otimizacao de carteira e rebalanceamento.
+- Dashboard corporativo multiusuario com autenticacao.
 
-## Critérios de aceite do MVP
+## Criterios de aceite da entrega
 
-- O pipeline roda de ponta a ponta sem intervenção manual.
-- Cada ticker gera recomendação diária com justificativa legível.
-- O agente responde perguntas de explicação por ticker.
-- Saída contém indicadores e sentimento usados na decisão.
-- Há rastreabilidade mínima de dados de entrada e decisão final.
+- Aplicacao executa localmente de ponta a ponta.
+- Pipeline gera recomendacoes para o conjunto de tickers alvo.
+- Explicacoes no chat sao coerentes com os dados da execucao.
+- Artefatos persistidos permitem auditoria basica.
+- Backtest executa com metricas e mensagens de erro compreensiveis.

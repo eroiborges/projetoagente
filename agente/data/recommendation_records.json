@@ -1,626 +1,16 @@
 [
   {
     "ticker": "VALE3",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=48.2, sentimento=positive (pos=3, neg=2, neu=1).",
-    "generated_at": "2026-06-05T01:22:58Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=56.4, sentimento=neutral (pos=2, neg=2, neu=0).",
-    "generated_at": "2026-06-05T01:22:58Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=48.2, sentimento=positive (pos=3, neg=2, neu=1).",
-    "generated_at": "2026-06-05T01:22:58Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=56.4, sentimento=neutral (pos=2, neg=2, neu=0).",
-    "generated_at": "2026-06-05T01:22:58Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=positive (pos=3, neg=2, neu=1).",
-    "generated_at": "2026-06-05T01:33:19Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=2, neg=2, neu=0).",
-    "generated_at": "2026-06-05T01:33:19Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=1, neg=1, neu=2).",
-    "generated_at": "2026-06-05T01:33:19Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=negative (pos=1, neg=3, neu=1).",
-    "generated_at": "2026-06-05T01:33:19Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=positive (pos=3, neg=2, neu=1).",
-    "generated_at": "2026-06-05T01:38:00Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=2, neg=2, neu=0).",
-    "generated_at": "2026-06-05T01:38:00Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=1, neg=1, neu=2).",
-    "generated_at": "2026-06-05T01:38:00Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=negative (pos=1, neg=3, neu=1).",
-    "generated_at": "2026-06-05T01:38:00Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:15:06Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:15:07Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:15:07Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:15:08Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:16:19Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:16:20Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:16:20Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:16:21Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:43:31Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=0, neg=0, neu=3).",
-    "generated_at": "2026-06-05T02:43:31Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=0, neg=0, neu=3).",
-    "generated_at": "2026-06-05T02:43:31Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=1).",
-    "generated_at": "2026-06-05T02:43:32Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
-    "generated_at": "2026-06-05T02:48:13Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=14).",
-    "generated_at": "2026-06-05T02:48:15Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
-    "generated_at": "2026-06-05T02:48:16Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
-    "generated_at": "2026-06-05T02:48:17Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
-    "generated_at": "2026-06-05T02:49:41Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=14).",
-    "generated_at": "2026-06-05T02:49:42Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
-    "generated_at": "2026-06-05T02:49:42Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
-    "generated_at": "2026-06-05T02:49:43Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
-    "generated_at": "2026-06-05T02:52:47Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=14).",
-    "generated_at": "2026-06-05T02:52:48Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
-    "generated_at": "2026-06-05T02:52:49Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
-    "generated_at": "2026-06-05T02:52:51Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
-    "generated_at": "2026-06-05T03:06:20Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=13).",
-    "generated_at": "2026-06-05T03:06:22Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
-    "generated_at": "2026-06-05T03:06:23Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
-    "generated_at": "2026-06-05T03:06:24Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=48.2, sentimento=positive (pos=3, neg=2, neu=1).",
-    "generated_at": "2026-06-05T03:07:10Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=56.4, sentimento=neutral (pos=2, neg=2, neu=0).",
-    "generated_at": "2026-06-05T03:07:10Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=neutral, RSI=51.0, sentimento=neutral (pos=1, neg=1, neu=2).",
-    "generated_at": "2026-06-05T03:07:10Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "VENDER",
-    "confidence": 0.75,
-    "rationale": "MACD=bearish, RSI=43.3, sentimento=negative (pos=1, neg=3, neu=1).",
-    "generated_at": "2026-06-05T03:07:10Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=10).",
-    "generated_at": "2026-06-05T03:07:33Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=13).",
-    "generated_at": "2026-06-05T03:07:34Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
-    "generated_at": "2026-06-05T03:07:34Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
-    "generated_at": "2026-06-05T03:07:35Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=11).",
-    "generated_at": "2026-06-05T03:15:07Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=13).",
-    "generated_at": "2026-06-05T03:15:08Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=25).",
-    "generated_at": "2026-06-05T03:15:09Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
-    "generated_at": "2026-06-05T03:15:10Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=11).",
-    "generated_at": "2026-06-05T03:26:09Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=13).",
-    "generated_at": "2026-06-05T03:26:10Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=25).",
-    "generated_at": "2026-06-05T03:26:11Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
-    "generated_at": "2026-06-05T03:26:12Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.65,
-    "rationale": "MACD=bullish, RSI=46.7, sentimento=neutral (pos=0, neg=1, neu=11).",
-    "generated_at": "2026-06-05T03:31:36Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=30.7, sentimento=neutral (pos=1, neg=1, neu=13).",
-    "generated_at": "2026-06-05T03:31:38Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=28.5, sentimento=neutral (pos=2, neg=0, neu=26).",
-    "generated_at": "2026-06-05T03:31:38Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=35.2, sentimento=neutral (pos=0, neg=0, neu=5).",
-    "generated_at": "2026-06-05T03:31:40Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=39.6, sentimento=neutral (pos=0, neg=1, neu=10).",
-    "generated_at": "2026-06-06T20:57:07Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=29.5, sentimento=neutral (pos=1, neg=0, neu=14).",
-    "generated_at": "2026-06-06T20:57:09Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=bearish, RSI=26.1, sentimento=neutral (pos=3, neg=0, neu=24).",
-    "generated_at": "2026-06-06T20:57:10Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=bullish, RSI=36.3, sentimento=neutral (pos=1, neg=0, neu=7).",
-    "generated_at": "2026-06-06T20:57:11Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=39.6, sentimento=neutral (pos=0, neg=1, neu=10).",
-    "generated_at": "2026-06-06T21:06:01Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=29.5, sentimento=neutral (pos=1, neg=0, neu=14).",
-    "generated_at": "2026-06-06T21:06:02Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=26.1, sentimento=neutral (pos=3, neg=0, neu=24).",
-    "generated_at": "2026-06-06T21:06:03Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=alta, RSI=36.3, sentimento=neutral (pos=1, neg=0, neu=7).",
-    "generated_at": "2026-06-06T21:06:03Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=39.6, sentimento=neutro (pos=0, neg=1, neu=10).",
-    "generated_at": "2026-06-06T21:08:48Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=29.5, sentimento=neutro (pos=1, neg=0, neu=14).",
-    "generated_at": "2026-06-06T21:08:50Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=26.1, sentimento=neutro (pos=3, neg=0, neu=24).",
-    "generated_at": "2026-06-06T21:08:51Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=alta, RSI=36.3, sentimento=neutro (pos=1, neg=0, neu=7).",
-    "generated_at": "2026-06-06T21:08:52Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=39.6, sentimento=neutro (pos=1, neg=1, neu=11).",
-    "generated_at": "2026-06-06T21:16:20Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=29.5, sentimento=neutro (pos=1, neg=0, neu=14).",
-    "generated_at": "2026-06-06T21:16:21Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=26.1, sentimento=neutro (pos=3, neg=0, neu=23).",
-    "generated_at": "2026-06-06T21:16:22Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=alta, RSI=36.3, sentimento=neutro (pos=0, neg=0, neu=7).",
-    "generated_at": "2026-06-06T21:16:23Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=39.6, sentimento=neutro (pos=1, neg=1, neu=11).",
-    "generated_at": "2026-06-06T21:38:54Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=29.5, sentimento=neutro (pos=1, neg=0, neu=15).",
-    "generated_at": "2026-06-06T21:38:55Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=26.1, sentimento=neutro (pos=3, neg=0, neu=24).",
-    "generated_at": "2026-06-06T21:38:57Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=alta, RSI=36.3, sentimento=neutro (pos=1, neg=0, neu=7).",
-    "generated_at": "2026-06-06T21:38:58Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=39.6, sentimento=neutro (pos=1, neg=1, neu=11).",
-    "generated_at": "2026-06-06T21:44:01Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=29.5, sentimento=neutro (pos=1, neg=0, neu=15).",
-    "generated_at": "2026-06-06T21:44:02Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=26.1, sentimento=neutro (pos=3, neg=0, neu=22).",
-    "generated_at": "2026-06-06T21:44:03Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=alta, RSI=36.3, sentimento=neutro (pos=1, neg=0, neu=7).",
-    "generated_at": "2026-06-06T21:44:04Z"
-  },
-  {
-    "ticker": "VALE3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=39.6, sentimento=neutro (pos=0, neg=1, neu=11).",
-    "generated_at": "2026-06-06T21:48:53Z"
-  },
-  {
-    "ticker": "PETR4",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=29.5, sentimento=neutro (pos=1, neg=0, neu=15).",
-    "generated_at": "2026-06-06T21:48:54Z"
-  },
-  {
-    "ticker": "BBAS3",
-    "recommendation": "AGUARDAR",
-    "confidence": 0.55,
-    "rationale": "MACD=baixa, RSI=26.1, sentimento=neutro (pos=3, neg=0, neu=24).",
-    "generated_at": "2026-06-06T21:48:55Z"
-  },
-  {
-    "ticker": "ITUB4",
-    "recommendation": "COMPRAR",
-    "confidence": 0.75,
-    "rationale": "MACD=alta, RSI=36.3, sentimento=neutro (pos=1, neg=0, neu=7).",
-    "generated_at": "2026-06-06T21:48:56Z"
-  },
-  {
-    "ticker": "VALE3",
     "recommendation": "AGUARDAR",
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=12). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:06:09Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 13,
+    "news_sentiment_score": -0.0769,
+    "avg_impact_score": 0.5385,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -646,6 +36,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=15). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:06:11Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0625,
+    "avg_impact_score": 0.4938,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -671,6 +67,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=24). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:06:12Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 27,
+    "news_sentiment_score": 0.1111,
+    "avg_impact_score": 0.5259,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -696,6 +98,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T22:06:13Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -721,6 +129,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=13). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:29:22Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.0714,
+    "avg_impact_score": 0.5357,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -746,6 +160,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=15). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:29:23Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0625,
+    "avg_impact_score": 0.4938,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -771,6 +191,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=23). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:29:24Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 26,
+    "news_sentiment_score": 0.1154,
+    "avg_impact_score": 0.5231,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -796,6 +222,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T22:29:25Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -821,6 +253,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 48.2, faixa intermediaria. Noticias: consenso positivo (pos=3, neg=2, neu=1). Decisao final: COMPRAR, com score tecnico 1, score de noticias 1 e score total 2.",
     "generated_at": "2026-06-06T22:45:45Z",
+    "data_mode": "mock",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
     "evidence": {
       "technical_score": 1,
       "news_score": 1,
@@ -846,6 +284,12 @@
     "confidence": 0.65,
     "rationale": "Tecnico: MACD em alta e RSI em 56.4, faixa intermediaria. Noticias: consenso neutro (pos=2, neg=2, neu=0). Decisao final: AGUARDAR, com score tecnico 1, score de noticias 0 e score total 1.",
     "generated_at": "2026-06-06T22:45:45Z",
+    "data_mode": "mock",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
     "evidence": {
       "technical_score": 1,
       "news_score": 0,
@@ -871,6 +315,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD neutro e RSI em 51.0, faixa intermediaria. Noticias: consenso neutro (pos=1, neg=1, neu=2). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:45:45Z",
+    "data_mode": "mock",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -896,6 +346,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em baixa e RSI em 43.3, faixa intermediaria. Noticias: consenso negativo (pos=1, neg=3, neu=1). Decisao final: VENDER, com score tecnico -1, score de noticias -1 e score total -2.",
     "generated_at": "2026-06-06T22:45:45Z",
+    "data_mode": "mock",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
     "evidence": {
       "technical_score": -1,
       "news_score": -1,
@@ -921,6 +377,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=13). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:46:04Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.0714,
+    "avg_impact_score": 0.5214,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -946,6 +408,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=15). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:46:06Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0625,
+    "avg_impact_score": 0.4938,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -971,6 +439,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=23). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:46:07Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 26,
+    "news_sentiment_score": 0.1154,
+    "avg_impact_score": 0.5231,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -996,6 +470,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T22:46:08Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -1021,6 +501,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=13). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:47:44Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.0714,
+    "avg_impact_score": 0.5214,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1046,6 +532,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=15). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:47:44Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0625,
+    "avg_impact_score": 0.4938,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1071,6 +563,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=23). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:47:45Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 26,
+    "news_sentiment_score": 0.1154,
+    "avg_impact_score": 0.5231,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1096,6 +594,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T22:47:45Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -1121,6 +625,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=13). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:52:13Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.0714,
+    "avg_impact_score": 0.5214,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1146,6 +656,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=15). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:52:14Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0625,
+    "avg_impact_score": 0.4938,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1171,6 +687,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=23). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:52:16Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 26,
+    "news_sentiment_score": 0.1154,
+    "avg_impact_score": 0.5231,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1196,6 +718,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T22:52:17Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -1221,6 +749,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=13). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:54:18Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.0714,
+    "avg_impact_score": 0.5214,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1246,6 +780,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=15). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:54:19Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0625,
+    "avg_impact_score": 0.4938,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1271,6 +811,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=23). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:54:21Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 26,
+    "news_sentiment_score": 0.1154,
+    "avg_impact_score": 0.5231,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1296,6 +842,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T22:54:22Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -1321,6 +873,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=13). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:55:32Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.0714,
+    "avg_impact_score": 0.5214,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1346,6 +904,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=15). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:55:32Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0625,
+    "avg_impact_score": 0.4938,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1371,6 +935,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=23). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:55:33Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 26,
+    "news_sentiment_score": 0.1154,
+    "avg_impact_score": 0.5231,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1396,6 +966,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T22:55:33Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -1421,6 +997,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=13). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:57:25Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.0714,
+    "avg_impact_score": 0.5214,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1446,6 +1028,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=15). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:57:26Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0625,
+    "avg_impact_score": 0.4938,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1471,6 +1059,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=23). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T22:57:27Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 26,
+    "news_sentiment_score": 0.1154,
+    "avg_impact_score": 0.5231,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1496,6 +1090,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T22:57:29Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -1521,6 +1121,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=13). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:00:00Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.0714,
+    "avg_impact_score": 0.5214,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1546,6 +1152,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=14). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:00:01Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 15,
+    "news_sentiment_score": 0.0667,
+    "avg_impact_score": 0.5,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1571,6 +1183,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=24). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:00:02Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 27,
+    "news_sentiment_score": 0.1111,
+    "avg_impact_score": 0.5222,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1596,6 +1214,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T23:00:03Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -1621,6 +1245,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=13). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:00:47Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.0714,
+    "avg_impact_score": 0.5214,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1646,6 +1276,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=14). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:00:48Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 15,
+    "news_sentiment_score": 0.0667,
+    "avg_impact_score": 0.5,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1671,6 +1307,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=24). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:00:48Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 27,
+    "news_sentiment_score": 0.1111,
+    "avg_impact_score": 0.5222,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1696,6 +1338,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T23:00:48Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -1721,6 +1369,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=12). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:35:01Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 13,
+    "news_sentiment_score": -0.0769,
+    "avg_impact_score": 0.5308,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1746,6 +1400,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=14). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:35:02Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 15,
+    "news_sentiment_score": 0.0667,
+    "avg_impact_score": 0.4867,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1771,6 +1431,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=23). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:35:04Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 26,
+    "news_sentiment_score": 0.1154,
+    "avg_impact_score": 0.5154,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1796,6 +1462,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T23:35:05Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,
@@ -1821,6 +1493,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 39.6, abaixo de 40. Noticias: consenso neutro (pos=0, neg=1, neu=12). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:59:23Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 13,
+    "news_sentiment_score": -0.0769,
+    "avg_impact_score": 0.5308,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1846,6 +1524,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 29.5, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=14). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:59:25Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 15,
+    "news_sentiment_score": 0.0667,
+    "avg_impact_score": 0.4867,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1871,6 +1555,12 @@
     "confidence": 0.55,
     "rationale": "Tecnico: MACD em baixa e RSI em 26.1, abaixo de 40. Noticias: consenso neutro (pos=3, neg=0, neu=22). Decisao final: AGUARDAR, com score tecnico 0, score de noticias 0 e score total 0.",
     "generated_at": "2026-06-06T23:59:26Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 25,
+    "news_sentiment_score": 0.12,
+    "avg_impact_score": 0.528,
     "evidence": {
       "technical_score": 0,
       "news_score": 0,
@@ -1896,6 +1586,12 @@
     "confidence": 0.75,
     "rationale": "Tecnico: MACD em alta e RSI em 36.3, abaixo de 40. Noticias: consenso neutro (pos=1, neg=0, neu=7). Decisao final: COMPRAR, com score tecnico 2, score de noticias 0 e score total 2.",
     "generated_at": "2026-06-06T23:59:28Z",
+    "data_mode": "real",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.125,
+    "avg_impact_score": 0.4625,
     "evidence": {
       "technical_score": 2,
       "news_score": 0,

@@ -1,39 +1,46 @@
-# 01 - Visão Geral do Projeto
+# 01 - Visao Geral do Projeto
 
 ## Contexto
 
-A QuantumFinance deseja um assistente de investimentos baseado em AI Agent para apoiar decisões em renda variável com explicabilidade.
+Projeto academico de AI Agent para apoio a decisao em renda variavel com foco em explicabilidade e rastreabilidade.
 
-## Objetivo
+Ativos monitorados:
 
-Construir um agente conversacional em Python que:
+- VALE3
+- PETR4
+- BBAS3
+- ITUB4
 
-- Monitore VALE3, PETR4, BBAS3 e ITUB4
-- Analise notícias e sentimento por ativo
-- Calcule indicadores técnicos
-- Gere recomendação COMPRAR, VENDER ou AGUARDAR com justificativa
+## Objetivo da entrega
 
-## Problemas que vamos resolver
+Fornecer uma aplicacao funcional que:
 
-- Dificuldade de consolidar sinais técnicos e notícias em uma visão única.
-- Falta de explicação transparente sobre por que recomendar uma ação.
-- Dependência de análise manual para decisões repetitivas diárias.
+- Coleta dados tecnicos e noticias por ticker.
+- Gera recomendacao `COMPRAR`, `VENDER` ou `AGUARDAR`.
+- Exibe justificativa com evidencias objetivas.
+- Permite perguntas em linguagem natural sobre a recomendacao do dia.
+- Persiste artefatos em arquivos JSON para auditoria.
 
-## Personas
+## Valor da solucao
 
-- Investidor iniciante: quer recomendação simples e explicada.
-- Investidor intermediário: quer ver sinais e peso de cada evidência.
-- Avaliador acadêmico: quer rastreabilidade do pipeline e do raciocínio.
+- Consolida sinais tecnicos e noticias em uma unica visao.
+- Reduz ambiguidade da recomendacao com explicacao causal.
+- Permite demonstracao ponta a ponta sem dependencias externas de interface.
 
-## Casos de uso do MVP
+## Publico alvo
 
-1. Receber recomendação diária por ativo com justificativa.
-2. Perguntar em linguagem natural: "Por que VALE3 ficou em AGUARDAR hoje?".
-3. Consultar resumo de notícias e sentimento por ativo.
-4. Consultar indicadores técnicos e estado atual (sobrecompra/sobrevenda etc.).
+- Avaliador academico: precisa de reproducibilidade e clareza tecnica.
+- Usuario de demonstracao: precisa de saida simples e interpretavel.
 
-## Fora de escopo do MVP
+## Casos de uso entregues
 
-- Execução automática de ordens reais em corretora.
-- Estratégias de portfólio multiativo com otimização matemática avançada.
-- Operação intraday em baixa latência.
+1. Executar pipeline para um ticker ou para todos.
+2. Visualizar recomendacoes e status por ticker.
+3. Consultar explicacoes no chat: por que, mudanca, risco, resumo, tecnico, noticias e comparacao.
+4. Rodar backtest minimo com resumo agregado e por ticker.
+
+## Fora de escopo
+
+- Execucao automatica de ordens em corretora.
+- Gestao de carteira multiativo com otimizacao de alocacao.
+- Uso intraday em baixa latencia.
