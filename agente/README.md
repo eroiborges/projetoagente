@@ -140,4 +140,3 @@ Documentacao final em `especificacao/`:
 - `07_parametros.md`
 - `08_plano_sprints.md`
 - `09_execucao_final_limitacoes.md`
-- `11_auditoria_aderencia_material_existente.md`
