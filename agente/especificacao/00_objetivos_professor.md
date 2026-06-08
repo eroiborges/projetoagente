@@ -1,8 +1,7 @@
 # 00 - Objetivos Oficiais do Professor (fonte unica)
 
 Fonte oficial adotada:
-- materialAula/Projeto_Integrado_AI_Agents_v2.pdf
-- materialAula/Projeto_Integrado_AI_Agents_v2.md (validado como identico ao PDF)
+- materialAula/Projeto_Integrado_AI_Agents_v2.md 
 
 Regra deste documento:
 - Este arquivo lista somente objetivos, entregas e criterios declarados no enunciado.
