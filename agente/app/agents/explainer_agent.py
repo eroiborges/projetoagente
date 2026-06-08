@@ -1,5 +1,9 @@
 from collections.abc import Callable
+import json
 
+from openai import AzureOpenAI
+
+from app.config.settings import settings
 from app.agents.system_prompt import MAX_TOOL_ITERATIONS, get_system_prompt
 from app.domain.models import RunResult
 from app.tools.insight_tools import (
@@ -28,7 +32,16 @@ def explain_question(question: str, run_result: RunResult, default_ticker: str |
         if len(tickers) < 2:
             available = ", ".join(list_tickers(run_result))
             return f"Para comparar, cite pelo menos dois tickers na pergunta. Tickers disponiveis: {available}."
-        return _answer_compare(run_result, tickers[:2])
+        compare_context = {
+            "first": _run_tool_loop(run_result, tickers[0], "summary"),
+            "second": _run_tool_loop(run_result, tickers[1], "summary"),
+        }
+        return _llm_explain_strict(
+            question=question_norm,
+            intent=intent,
+            ticker="/".join(tickers[:2]),
+            context=compare_context,
+        )
 
     ticker = detect_ticker(question_norm, run_result) or (default_ticker or "").strip().upper()
     if not ticker:
@@ -36,11 +49,78 @@ def explain_question(question: str, run_result: RunResult, default_ticker: str |
         return f"Nao identifiquei o ticker na pergunta. Tickers disponiveis: {tickers}."
 
     context = _run_tool_loop(run_result, ticker, intent)
-    return _compose_answer(intent, ticker, question_lower, context)
+    return _llm_explain_strict(
+        question=question_norm,
+        intent=intent,
+        ticker=ticker,
+        context=context,
+    )
 
 
 def get_agent_system_prompt() -> str:
     return get_system_prompt()
+
+
+def _build_azure_client() -> AzureOpenAI | None:
+    endpoint = (settings.azure_openai_endpoint or "").strip()
+    api_key = (settings.azure_openai_api_key or "").strip()
+    api_version = (settings.azure_openai_api_version or "").strip()
+    if not endpoint or not api_key or not api_version:
+        return None
+
+    return AzureOpenAI(
+        azure_endpoint=endpoint,
+        api_key=api_key,
+        api_version=api_version,
+    )
+
+
+def _llm_explain_strict(
+    question: str,
+    intent: str,
+    ticker: str,
+    context: dict,
+) -> str:
+    client = _build_azure_client()
+    if client is None:
+        raise RuntimeError(
+            "Azure OpenAI indisponivel para explicacao do chat. "
+            "Configure AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_API_KEY, AZURE_OPENAI_API_VERSION e deployment valido."
+        )
+
+    compact_context = json.dumps(context, ensure_ascii=True, separators=(",", ":"))
+    prompt_usuario = (
+        "Responda em portugues do Brasil, de forma objetiva e explicavel para usuario final.\n"
+        "Use SOMENTE os dados fornecidos. Se faltar dado, diga isso claramente.\n"
+        "Nao invente numeros, noticias ou indicadores.\n"
+        f"Pergunta do usuario: {question}\n"
+        f"Intent detectada: {intent}\n"
+        f"Ticker alvo: {ticker}\n"
+        f"Contexto estruturado: {compact_context}\n"
+    )
+
+    try:
+        response = client.chat.completions.create(
+            model=settings.azure_openai_deployment_trading,
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "Voce e um analista financeiro para explicacoes em chat. "
+                        "Priorize clareza, rastreabilidade e aderencia aos dados."
+                    ),
+                },
+                {"role": "user", "content": prompt_usuario},
+            ],
+            temperature=0.2,
+            max_completion_tokens=320,
+        )
+        text = (response.choices[0].message.content or "").strip()
+        if not text:
+            raise RuntimeError("Azure OpenAI retornou resposta vazia para explicacao do chat.")
+        return text
+    except Exception as exc:
+        raise RuntimeError(f"Falha na explicacao via Azure OpenAI: {exc}") from exc
 
 
 def _run_tool_loop(run_result: RunResult, ticker: str, intent: str) -> dict:

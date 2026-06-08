@@ -7,6 +7,7 @@ from urllib.parse import quote_plus
 from typing import Tuple
 
 import feedparser
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 from app.config.settings import settings
 from app.domain.models import NewsItem, NewsSignal
@@ -26,31 +27,36 @@ TICKER_TERMS = {
     "ITUB4": ["itub4", "itau", "itaú", "itau unibanco", "itaú unibanco"],
 }
 
-POSITIVE_WORDS = {
-    "alta",
-    "subiu",
-    "lucro",
-    "recorde",
-    "positivo",
-    "crescimento",
-    "compra",
-    "valorizacao",
-    "valorização",
-    "melhora",
-}
+SENTIMENT_POSITIVE_THRESHOLD = 0.12
+SENTIMENT_NEGATIVE_THRESHOLD = -0.12
 
-NEGATIVE_WORDS = {
-    "queda",
-    "caiu",
-    "prejuizo",
-    "prejuízo",
-    "negativo",
-    "rebaixamento",
-    "venda",
-    "desvalorizacao",
-    "desvalorização",
-    "piora",
-}
+_SENTIMENT_ANALYZER = SentimentIntensityAnalyzer()
+_SENTIMENT_ANALYZER.lexicon.update(
+    {
+        "alta": 1.9,
+        "subiu": 1.7,
+        "sobe": 1.6,
+        "lucro": 2.2,
+        "recorde": 1.9,
+        "positivo": 1.6,
+        "crescimento": 1.7,
+        "compra": 1.3,
+        "valorizacao": 1.8,
+        "valorização": 1.8,
+        "melhora": 1.6,
+        "queda": -2.0,
+        "caiu": -1.8,
+        "recua": -1.7,
+        "prejuizo": -2.4,
+        "prejuízo": -2.4,
+        "negativo": -1.7,
+        "rebaixamento": -1.9,
+        "venda": -1.3,
+        "desvalorizacao": -1.9,
+        "desvalorização": -1.9,
+        "piora": -1.7,
+    }
+)
 
 
 def _consensus(positive: int, negative: int, neutral: int) -> str:
@@ -84,6 +90,16 @@ def get_news_analysis(ticker: str, data_mode: str = "mock") -> Tuple[NewsSignal,
         return signal, "ok_mock", "mock_data", len(items), items
 
     return _get_real_signal(ticker)
+
+
+def summarize_news_events(ticker: str, items: list[NewsItem], top_n: int | None = None) -> str:
+    if not items:
+        return f"Sem eventos relevantes de noticias para {ticker} no ciclo atual."
+
+    limit = top_n or settings.app_news_summary_top_n
+    ranked = sorted(items, key=lambda item: item.impact_score, reverse=True)[: max(1, limit)]
+    highlights = "; ".join(f"{item.source}: {item.title}" for item in ranked)
+    return f"Principais eventos de {ticker}: {highlights}."
 
 
 def _get_mock_signal(ticker: str) -> NewsSignal:
@@ -284,13 +300,13 @@ def _mock_news_items(ticker: str, signal: NewsSignal) -> list[NewsItem]:
 
 
 def _classify_sentiment(text: str) -> str:
-    clean = re.sub(r"[^a-zA-ZÀ-ÿ0-9\s]", " ", text.lower())
-    tokens = set(clean.split())
+    clean = re.sub(r"\s+", " ", (text or "").strip().lower())
+    if not clean:
+        return "neutral"
 
-    pos = len(tokens & POSITIVE_WORDS)
-    neg = len(tokens & NEGATIVE_WORDS)
-    if pos > neg:
+    compound = _SENTIMENT_ANALYZER.polarity_scores(clean).get("compound", 0.0)
+    if compound >= SENTIMENT_POSITIVE_THRESHOLD:
         return "positive"
-    if neg > pos:
+    if compound <= SENTIMENT_NEGATIVE_THRESHOLD:
         return "negative"
     return "neutral"

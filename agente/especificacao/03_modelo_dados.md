@@ -1,68 +1,56 @@
-# 03 - Modelo de Dados
+# 03 - Modelo de Dados e Campos
 
-## Contratos principais implementados
+## 1. Recommendation
+Arquivo relacionado: data/recommendations.json
 
-### Recommendation
+Campos principais:
+- ticker: ativo (ex.: VALE3).
+- recommendation: COMPRAR, VENDER ou AGUARDAR.
+- confidence: confianca no intervalo [0,1].
+- rationale: justificativa textual.
+- generated_at: timestamp UTC ISO.
+- evidence: objeto com rastreabilidade (tool_trace, react_trace, scores, llm_source etc).
 
-- `ticker`
-- `recommendation` (`COMPRAR`, `VENDER`, `AGUARDAR`)
-- `confidence` (0 a 1)
-- `rationale`
-- `generated_at`
-- `evidence` (scores, fatores e gatilhos)
+## 2. RecommendationRecord
+Arquivo relacionado: data/recommendation_records.json
 
-### RecommendationRecord
+Campos principais:
+- ticker, recommendation, confidence, rationale, generated_at.
+- data_mode: mock ou real.
+- market_status, news_status.
+- matched_news_count, news_sentiment_score, avg_impact_score.
+- evidence.
 
-- Campos da recomendacao final
-- `data_mode`
-- `market_status`
-- `news_status`
-- `matched_news_count`
-- `news_sentiment_score`
-- `avg_impact_score`
-- `evidence`
+## 3. DailyAnalysisRecord
+Arquivo relacionado: data/daily_analysis.json
 
-### TechnicalSnapshot e TechnicalHistoryPoint
+Campos:
+- ticker, date, close, rsi, macd_signal, news_sentiment, recommendation, data_mode.
 
-- `ticker`, `date`
-- OHLCV (`open`, `high`, `low`, `close`, `volume`)
-- Indicadores (`rsi`, `macd_value`, `macd_signal_value`, `macd_signal`, `sma_20`, `ema_20`, `bb_upper`, `bb_lower`, `bb_mid`, `volume_avg_20`)
-- `data_mode`
+## 4. TechnicalSnapshot / TechnicalHistoryPoint
+Arquivos relacionados:
+- data/technical_snapshots.json
+- data/technical_history.json
 
-### NewsItem
+Campos tecnicos:
+- OHLCV: open, high, low, close, volume.
+- Indicadores: rsi, macd_value, macd_signal_value, macd_signal, sma_20, ema_20, bb_upper, bb_lower, bb_mid, volume_avg_20.
+- ticker, date, data_mode.
 
-- `ticker`, `source`, `published_at`
-- `title`, `url`, `summary`
-- `sentiment_label`, `sentiment_score`, `impact_score`
-- `data_mode`
+## 5. NewsItem
+Arquivo relacionado: data/news_items.json
 
-### TickerRunStatus
+Campos:
+- ticker, source, published_at, title, url, summary.
+- sentiment_label, sentiment_score, impact_score.
+- data_mode.
 
-- `ticker`
-- `market_status`, `news_status`
-- `notes`
-- `matched_news_count`
-- `news_sentiment_score`
-- `avg_impact_score`
+## 6. TickerRunStatus
+Arquivo relacionado: data/ticker_statuses.json
 
-### RunResult
-
-Agregado da execucao com:
-
-- `recommendations`
-- `recommendation_records`
-- `technical_snapshots`
-- `technical_history`
-- `news_items`
-- `ticker_statuses`
-
-## Persistencia em JSON
-
-Arquivos finais em `data/`:
-
-- `recommendations.json`
-- `recommendation_records.json`
-- `technical_snapshots.json`
-- `technical_history.json`
-- `news_items.json`
-- `ticker_statuses.json`
+Campos:
+- ticker.
+- market_status, news_status, notes.
+- matched_news_count.
+- news_sentiment_score, avg_impact_score.
+- news_summary.

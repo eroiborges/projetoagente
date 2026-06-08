@@ -10,11 +10,12 @@ class Settings(BaseSettings):
     azure_openai_deployment_trading: str = "gpt-5.4-mini"
     azure_openai_api_version: str = "2024-12-01-preview"
 
-    app_default_data_mode: str = "mock"
+    app_default_data_mode: str = "real"
     app_default_execution_mode: str = "on_demand"
     app_default_tickers: str = "VALE3,PETR4,BBAS3,ITUB4"
     app_market_period: str = "6mo"
     app_news_limit_per_ticker: int = 30
+    app_news_summary_top_n: int = 3
 
     app_feed_infomoney: str = "https://www.infomoney.com.br/feed/"
     app_feed_b3: str = "https://news.google.com/rss/search?q=B3+site:b3.com.br&hl=pt-BR&gl=BR&ceid=BR:pt-419"

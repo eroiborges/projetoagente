@@ -46,6 +46,18 @@ class RecommendationRecord:
 
 
 @dataclass
+class DailyAnalysisRecord:
+    ticker: str
+    date: str
+    close: float
+    rsi: float
+    macd_signal: str
+    news_sentiment: float
+    recommendation: str
+    data_mode: str
+
+
+@dataclass
 class TechnicalSnapshot:
     ticker: str
     date: str
@@ -112,6 +124,7 @@ class TickerRunStatus:
     matched_news_count: int
     news_sentiment_score: float
     avg_impact_score: float
+    news_summary: str = ""
 
 
 @dataclass
@@ -122,6 +135,7 @@ class RunResult:
     news_items: list[NewsItem]
     ticker_statuses: list[TickerRunStatus]
     recommendation_records: list[RecommendationRecord] = field(default_factory=list)
+    daily_analysis: list[DailyAnalysisRecord] = field(default_factory=list)
 
 
 def utc_now_iso() -> str:

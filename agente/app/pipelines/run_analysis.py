@@ -1,24 +1,34 @@
 from typing import Iterable
 
-from app.agents.decision_agent import recommend
+from app.agents.langchain_agent import LangChainInvestmentAgent
+from app.config.settings import settings
 from app.domain.models import (
-    MarketSignal,
+    DailyAnalysisRecord,
     NewsItem,
-    NewsSignal,
     Recommendation,
     RecommendationRecord,
     RunResult,
     TickerRunStatus,
 )
 from app.tools.market_tool import get_technical_history_batch, get_technical_snapshots_batch
-from app.tools.news_tool import get_news_analysis
+
+
+def _normalize_macd_signal(value: str) -> str:
+    raw = (value or "").strip().lower()
+    if raw in {"bullish", "alta"}:
+        return "bullish"
+    if raw in {"bearish", "baixa"}:
+        return "bearish"
+    return "neutral"
 
 
 def run_pipeline(
     tickers: Iterable[str],
-    execution_mode: str = "on_demand",
-    data_mode: str = "mock",
+    execution_mode: str | None = None,
+    data_mode: str | None = None,
 ) -> list[Recommendation]:
+    execution_mode = execution_mode or settings.app_default_execution_mode
+    data_mode = data_mode or settings.app_default_data_mode
     result = run_pipeline_with_details(
         tickers=tickers,
         execution_mode=execution_mode,
@@ -29,54 +39,53 @@ def run_pipeline(
 
 def run_pipeline_with_details(
     tickers: Iterable[str],
-    execution_mode: str = "on_demand",
-    data_mode: str = "mock",
+    execution_mode: str | None = None,
+    data_mode: str | None = None,
 ) -> RunResult:
+    execution_mode = execution_mode or settings.app_default_execution_mode
+    data_mode = data_mode or settings.app_default_data_mode
     # O mesmo pipeline roda por demanda ou modo agendável; muda apenas o gatilho.
     _ = execution_mode
     recommendations: list[Recommendation] = []
     recommendation_records: list[RecommendationRecord] = []
+    daily_analysis: list[DailyAnalysisRecord] = []
+    agent = LangChainInvestmentAgent(data_mode=data_mode)
     technical_snapshots = get_technical_snapshots_batch(tickers=tickers, data_mode=data_mode)
     technical_history = get_technical_history_batch(tickers=tickers, data_mode=data_mode)
     news_items: list[NewsItem] = []
     ticker_statuses: list[TickerRunStatus] = []
 
     for snapshot in technical_snapshots:
-        market = MarketSignal(
-            ticker=snapshot.ticker,
-            close=snapshot.close,
-            rsi=snapshot.rsi,
-            macd_signal=snapshot.macd_signal,
-        )
         news_notes = ""
+        news_summary = ""
         matched_news_count = 0
         news_sentiment_score = 0.0
         avg_impact_score = 0.0
         try:
-            news, news_status, news_notes, matched_news_count, ticker_news_items = get_news_analysis(
-                ticker=snapshot.ticker,
-                data_mode=data_mode,
-            )
-            news_items.extend(ticker_news_items)
+            agent_result = agent.run_for_snapshot(snapshot)
+        except Exception as exc:
+            raise RuntimeError(
+                f"Falha no processamento do ticker {snapshot.ticker}. "
+                "Corrija configuracao do Azure OpenAI e dependencias de dados antes de reexecutar. "
+                f"Detalhe: {exc}"
+            ) from exc
 
-            total_votes = max(1, news.positive + news.negative + news.neutral)
-            news_sentiment_score = (news.positive - news.negative) / total_votes
-            if ticker_news_items:
-                avg_impact_score = sum(item.impact_score for item in ticker_news_items) / len(ticker_news_items)
-        except Exception:
-            news = NewsSignal(ticker=snapshot.ticker, positive=0, negative=0, neutral=1, consensus="neutral")
-            news_status = f"error_{data_mode}_fallback"
-            news_notes = "news_exception_fallback"
-            matched_news_count = 0
-            news_sentiment_score = 0.0
-            avg_impact_score = 0.0
+        recommendation = agent_result["recommendation"]
+        news = agent_result["news_signal"]
+        news_status = agent_result["news_status"]
+        news_notes = agent_result["news_notes"]
+        news_summary = agent_result["news_summary"]
+        matched_news_count = agent_result["matched_news_count"]
+        ticker_news_items = [NewsItem(**row) for row in agent_result["news_items"]]
+        news_items.extend(ticker_news_items)
 
-        recommendation = recommend(market, news)
+        total_votes = max(1, news.positive + news.negative + news.neutral)
+        news_sentiment_score = (news.positive - news.negative) / total_votes
+        if ticker_news_items:
+            avg_impact_score = sum(item.impact_score for item in ticker_news_items) / len(ticker_news_items)
         recommendations.append(recommendation)
 
         market_status = "ok_real" if snapshot.data_mode == "real" else f"ok_{snapshot.data_mode}"
-        if "fallback" in snapshot.data_mode:
-            market_status = "error_real_fallback"
 
         ticker_status = TickerRunStatus(
             ticker=snapshot.ticker,
@@ -86,6 +95,7 @@ def run_pipeline_with_details(
             matched_news_count=matched_news_count,
             news_sentiment_score=round(news_sentiment_score, 4),
             avg_impact_score=round(avg_impact_score, 4),
+            news_summary=news_summary,
         )
         ticker_statuses.append(ticker_status)
 
@@ -106,6 +116,19 @@ def run_pipeline_with_details(
             )
         )
 
+        daily_analysis.append(
+            DailyAnalysisRecord(
+                ticker=snapshot.ticker,
+                date=snapshot.date,
+                close=round(float(snapshot.close), 4),
+                rsi=round(float(snapshot.rsi), 4),
+                macd_signal=_normalize_macd_signal(snapshot.macd_signal),
+                news_sentiment=round(float(news_sentiment_score), 4),
+                recommendation=recommendation.recommendation,
+                data_mode=snapshot.data_mode,
+            )
+        )
+
     return RunResult(
         recommendations=recommendations,
         recommendation_records=recommendation_records,
@@ -113,4 +136,5 @@ def run_pipeline_with_details(
         technical_history=technical_history,
         news_items=news_items,
         ticker_statuses=ticker_statuses,
+        daily_analysis=daily_analysis,
     )

@@ -1,38 +1,27 @@
 # 02 - Arquitetura
 
-## Visao de alto nivel
+## 1. Visao em camadas
+- Interface: Streamlit em app/main.py.
+- Orquestracao: pipeline em app/pipelines/run_analysis.py.
+- Agentes: logica de decisao/explicacao em app/agents/.
+- Tools: mercado, noticias, insights e backtest em app/tools/.
+- Dominio: contratos de dados em app/domain/models.py.
+- Persistencia: armazenamento JSON em app/storage/json_store.py.
 
-Pipeline funcional:
+## 2. Fluxo principal
+1. Usuario inicia execucao no app.
+2. Pipeline coleta snapshot tecnico e noticias por ticker.
+3. Agente executa tools e monta trilha ReAct.
+4. Sistema gera recomendacao com evidencia.
+5. Resultado e persistido em arquivos JSON.
+6. UI mostra recomendacoes, status, backtest e chat explicativo.
 
-1. `market_tool` coleta snapshots e historico tecnico por ticker.
-2. `news_tool` coleta e consolida noticias/sentimento por ticker.
-3. `decision_agent` combina sinais tecnico + noticias e produz recomendacao.
-4. `run_analysis` monta `RunResult` com recomendacoes, status e registros estruturados.
-5. `json_store` persiste artefatos em `data/`.
-6. `main.py` apresenta resultados, backtest e chat explicativo.
+## 3. Integracoes externas
+- yfinance: dados de mercado.
+- feedparser: leitura de feeds RSS.
+- Azure OpenAI: decisao, reflexao e explicacoes de chat no fluxo principal.
 
-## Componentes implementados
-
-- Interface: `app/main.py`.
-- Pipeline: `app/pipelines/run_analysis.py`.
-- Agente decisor: `app/agents/decision_agent.py`.
-- Agente explicador: `app/agents/explainer_agent.py`.
-- Prompt do explicador: `app/agents/system_prompt.py`.
-- Tools: `app/tools/market_tool.py`, `app/tools/news_tool.py`, `app/tools/insight_tools.py`, `app/tools/backtest_tool.py`.
-- Persistencia: `app/storage/json_store.py`.
-- Contratos: `app/domain/models.py`.
-
-## Padrao de responsabilidade
-
-- Coleta e transformacao de dados ficam nas tools.
-- Regra de decisao fica isolada no agente decisor.
-- Explicacao fica isolada no agente explicador.
-- Orquestracao e contrato de retorno ficam no pipeline.
-- Interface apenas dispara fluxo e exibe saida.
-
-## Guardrails de comportamento
-
-- Fallback seguro quando fonte real falha.
-- Resposta explicativa sem inventar dados ausentes.
-- Recomendacao sempre com justificativa e evidencias.
-- Backtest com validacao de janela e mensagens de erro amigaveis.
+## 4. Desenho logico (alto nivel)
+- Entrada: configuracao + tickers + modo de dados.
+- Processamento: tools + agente + normalizacao de sinal.
+- Saida: recomendacoes, historicos, status, metricas e respostas de chat.

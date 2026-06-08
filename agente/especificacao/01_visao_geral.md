@@ -1,46 +1,23 @@
 # 01 - Visao Geral do Projeto
 
-## Contexto
+## 1. Objetivo
+Construir um AI Agent de investimentos para os tickers VALE3, PETR4, BBAS3 e ITUB4, capaz de:
+- monitorar mercado e noticias;
+- gerar recomendacao COMPRAR/VENDER/AGUARDAR com justificativa;
+- registrar o raciocinio (ReAct/Chain-of-Thought);
+- permitir consulta via interface conversacional.
 
-Projeto academico de AI Agent para apoio a decisao em renda variavel com foco em explicabilidade e rastreabilidade.
+## 2. Escopo funcional implementado
+- Coleta de dados de mercado (yfinance) e noticias (RSS via feedparser).
+- Processamento tecnico com indicadores (RSI, MACD, SMA/EMA, Bollinger, volume).
+- Analise de sentimento com NLP (VADER com ajuste de lexico financeiro).
+- Agente com tools e trilha ReAct.
+- Recomendacao por ticker com evidencias.
+- Backtest com comparativo Buy-and-Hold.
+- Interface Streamlit com execucao manual e monitoramento em sessao (5/15/30 min).
 
-Ativos monitorados:
-
-- VALE3
-- PETR4
-- BBAS3
-- ITUB4
-
-## Objetivo da entrega
-
-Fornecer uma aplicacao funcional que:
-
-- Coleta dados tecnicos e noticias por ticker.
-- Gera recomendacao `COMPRAR`, `VENDER` ou `AGUARDAR`.
-- Exibe justificativa com evidencias objetivas.
-- Permite perguntas em linguagem natural sobre a recomendacao do dia.
-- Persiste artefatos em arquivos JSON para auditoria.
-
-## Valor da solucao
-
-- Consolida sinais tecnicos e noticias em uma unica visao.
-- Reduz ambiguidade da recomendacao com explicacao causal.
-- Permite demonstracao ponta a ponta sem dependencias externas de interface.
-
-## Publico alvo
-
-- Avaliador academico: precisa de reproducibilidade e clareza tecnica.
-- Usuario de demonstracao: precisa de saida simples e interpretavel.
-
-## Casos de uso entregues
-
-1. Executar pipeline para um ticker ou para todos.
-2. Visualizar recomendacoes e status por ticker.
-3. Consultar explicacoes no chat: por que, mudanca, risco, resumo, tecnico, noticias e comparacao.
-4. Rodar backtest minimo com resumo agregado e por ticker.
-
-## Fora de escopo
-
-- Execucao automatica de ordens em corretora.
-- Gestao de carteira multiativo com otimizacao de alocacao.
-- Uso intraday em baixa latencia.
+## 3. Resultado esperado para avaliacao
+- Acuracia de recomendacoes (acerto de tendencia).
+- Qualidade de explicacao do raciocinio.
+- Desempenho financeiro da estrategia vs Buy-and-Hold.
+- Interface conversacional funcional.

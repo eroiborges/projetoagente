@@ -1,38 +1,23 @@
-# 05 - Tecnologias
+# 05 - Tecnologias e Dependencias
 
-## Linguagem e runtime
-
+## 1. Linguagem e runtime
 - Python 3.x
 
-## Interface
-
+## 2. Framework de interface
 - Streamlit
 
-## Dados de mercado e indicadores
+## 3. Agente e raciocinio
+- LangChain (tools do agente)
+- Azure OpenAI (decisao, reflexao e chat no fluxo principal)
 
-- yfinance
-- pandas
-- pandas-ta-classic
+## 4. Coleta e analise de dados
+- yfinance (mercado)
+- feedparser (RSS)
+- pandas / pandas-ta-classic (indicadores)
+- vaderSentiment (NLP de sentimento)
 
-## Noticias
-
-- feedparser
-- RSS (InfoMoney, B3 via Google News, Reuters via Google News, consulta dinamica por ticker)
-
-## Agentes e IA
-
-- Arquitetura multiagente no codigo (decisao e explicacao)
-- Integracao configuravel para Azure OpenAI/Foundry via settings e ambiente
-
-## Persistencia
-
-- JSON em `data/` com deduplicacao por chave de negocio
-
-## Testes
-
+## 5. Qualidade e testes
 - pytest
 
-## Configuracao
-
-- `app/config/settings.py`
-- variaveis de ambiente para endpoint/chave/deployments
+## 6. Persistencia
+- JSON local em pasta data/

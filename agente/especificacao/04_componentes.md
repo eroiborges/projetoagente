@@ -1,33 +1,46 @@
-# 04 - Componentes
+# 04 - Componentes do Sistema
 
-## Estrutura implementada
+## 1. Interface
+Arquivo: app/main.py
 
-- `app/main.py`: interface Streamlit com execucao, tabela, status, backtest e chat.
-- `app/pipelines/run_analysis.py`: pipeline principal e contrato de retorno.
-- `app/agents/decision_agent.py`: regra de recomendacao e evidencia.
-- `app/agents/explainer_agent.py`: respostas do chat por intencao.
-- `app/agents/system_prompt.py`: prompt de sistema do explicador.
-- `app/tools/market_tool.py`: coleta de mercado e indicadores.
-- `app/tools/news_tool.py`: coleta/classificacao de noticias.
-- `app/tools/insight_tools.py`: leitura de contexto para respostas explicativas.
-- `app/tools/backtest_tool.py`: backtest e metricas.
-- `app/storage/json_store.py`: append com deduplicacao.
-- `app/domain/models.py`: dataclasses de dominio.
+Responsabilidades:
+- receber parametros de execucao;
+- disparar pipeline;
+- exibir tabelas e metricas;
+- manter monitoramento em sessao;
+- disponibilizar chat de explicacao.
 
-## Testes implementados
+## 2. Pipeline
+Arquivo: app/pipelines/run_analysis.py
 
-- `tests/test_market_tool.py`
-- `tests/test_news_tool.py`
-- `tests/test_json_store.py`
-- `tests/test_pipeline_integration.py`
-- `tests/test_explainer_agent.py`
-- `tests/test_backtest_tool.py`
-- `tests/test_demo_sprint5.py`
+Responsabilidades:
+- orquestrar execucao por ticker;
+- invocar agente/tools;
+- consolidar recomendacoes, status e artefatos;
+- entregar RunResult para persistencia e UI.
 
-## Responsabilidades resumidas
+## 3. Agentes
+Arquivos: app/agents/langchain_agent.py, app/agents/explainer_agent.py, app/agents/decision_agent.py
 
-- Pipeline: orquestrar coleta, decisao e consolidacao.
-- Agente decisor: transformar sinais em recomendacao.
-- Agente explicador: responder perguntas do usuario com base nos dados do dia.
-- Backtest: medir desempenho da estrategia com dados historicos persistidos.
-- App: expor experiencia de demonstracao ponta a ponta.
+Responsabilidades:
+- executar tools do agente;
+- montar trilha ReAct;
+- gerar decisao e reflexao via Azure OpenAI (modo estrito no fluxo principal);
+- responder perguntas do chat com contexto do ultimo ciclo (modo estrito via Azure OpenAI);
+- manter `decision_agent.py` como modulo legado de regra deterministica (fora do fluxo principal atual).
+
+## 4. Tools
+Arquivos: app/tools/*.py
+
+Responsabilidades:
+- market_tool.py: coleta tecnica e indicadores.
+- news_tool.py: coleta de noticias, sentimento e resumo.
+- insight_tools.py: contexto para explicacoes.
+- backtest_tool.py: acuracia, retorno e comparativo Buy-and-Hold.
+
+## 5. Dominio e persistencia
+Arquivos: app/domain/models.py, app/storage/json_store.py
+
+Responsabilidades:
+- definir contratos de dados;
+- gravar artefatos em JSON com deduplicacao.

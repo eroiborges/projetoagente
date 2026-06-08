@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 from app.domain.models import (
+    DailyAnalysisRecord,
     NewsItem,
     Recommendation,
     RecommendationRecord,
@@ -46,6 +47,36 @@ def append_recommendation_records(path: str, records: list[RecommendationRecord]
         key = (
             str(row.get("ticker", "")),
             str(row.get("generated_at", "")),
+            str(row.get("data_mode", "")),
+        )
+        merged[key] = row
+
+    target.write_text(json.dumps(list(merged.values()), ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def append_daily_analysis(path: str, records: list[DailyAnalysisRecord]) -> None:
+    target = Path(path)
+    target.parent.mkdir(parents=True, exist_ok=True)
+
+    existing: list[dict] = []
+    if target.exists():
+        existing = json.loads(target.read_text(encoding="utf-8"))
+
+    merged: dict[tuple[str, str, str], dict] = {}
+
+    for row in existing:
+        key = (
+            str(row.get("ticker", "")),
+            str(row.get("date", "")),
+            str(row.get("data_mode", "")),
+        )
+        merged[key] = row
+
+    for record in records:
+        row = record.__dict__
+        key = (
+            str(row.get("ticker", "")),
+            str(row.get("date", "")),
             str(row.get("data_mode", "")),
         )
         merged[key] = row

@@ -1058,5 +1058,805 @@
     "matched_news_count": 8,
     "news_sentiment_score": 0.125,
     "avg_impact_score": 0.4625
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 15,
+    "news_sentiment_score": -0.3333,
+    "avg_impact_score": 0.54,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Vale do Ribeira preserva tradição japonesa e produz chá preto único no Brasil; VÍDEO - G1; google_news_ticker: Galeria de Casas do Vale Vermelho / line+ studio - 4 - ArchDaily Brasil; google_news_ticker: Inova Vale do Jari Profissionalizante leva capacitação estratégica a servidores do município de Vitória de Jari - Agência de Notícias do Amapá."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 22,
+    "news_sentiment_score": 0.0455,
+    "avg_impact_score": 0.5409,
+    "news_summary": "Principais eventos de PETR4: google_news_ticker: Setor aéreo deve fechar ano com queda de 49% no lucro ante crise do petróleo - Valor Econômico; infomoney: Futuros de NY abrem em queda com ataque do Irã a Israel e pressão sobre ações tech; google_news_ticker: Preços do petróleo sobem mais de 3% após Irã disparar mísseis contra Israel - Valor Econômico."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 31,
+    "news_sentiment_score": 0.0645,
+    "avg_impact_score": 0.5258,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Banco do Brasil (BBAS3), Gerdau (GGBR4) e mais 7 empresas pagam dividendos esta semana - Empiricus; google_news_ticker: Banco do Brasil (BBAS3) e Gerdau Metalúrgica (GOAU4): Veja quem paga dividendos na semana - suno.com.br; google_news_ticker: BBAS3: o que está por trás da pressão sobre as ações do Banco do Brasil e por que investidores acompanham o cenário com atenção - arevista.com.br."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 9,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.4778,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Lucro do Itaú sobe 10% enquanto bancários convivem com sobrecarga e demissões - Sindicato dos Bancários; google_news_ticker: Preço-justo do InvestingPro identificou ganho de 45,7% no Itaú Unibanco Por Investing.com - Investing.com Brasil - Finanças, Câmbio e Investimentos; google_news_ticker: Mariana Aydar chega ao Itaú Cultural com o “Forro da Mari” - Itaú Cultural."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 15,
+    "news_sentiment_score": -0.3333,
+    "avg_impact_score": 0.54,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Vale do Ribeira preserva tradição japonesa e produz chá preto único no Brasil; VÍDEO - G1; google_news_ticker: Galeria de Casas do Vale Vermelho / line+ studio - 4 - ArchDaily Brasil; google_news_ticker: Inova Vale do Jari Profissionalizante leva capacitação estratégica a servidores do município de Vitória de Jari - Agência de Notícias do Amapá."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 22,
+    "news_sentiment_score": 0.0455,
+    "avg_impact_score": 0.5409,
+    "news_summary": "Principais eventos de PETR4: google_news_ticker: Setor aéreo deve fechar ano com queda de 49% no lucro ante crise do petróleo - Valor Econômico; infomoney: Futuros de NY abrem em queda com ataque do Irã a Israel e pressão sobre ações tech; google_news_ticker: Preços do petróleo sobem mais de 3% após Irã disparar mísseis contra Israel - Valor Econômico."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 31,
+    "news_sentiment_score": 0.0645,
+    "avg_impact_score": 0.5258,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Banco do Brasil (BBAS3), Gerdau (GGBR4) e mais 7 empresas pagam dividendos esta semana - Empiricus; google_news_ticker: Banco do Brasil (BBAS3) e Gerdau Metalúrgica (GOAU4): Veja quem paga dividendos na semana - suno.com.br; google_news_ticker: BBAS3: o que está por trás da pressão sobre as ações do Banco do Brasil e por que investidores acompanham o cenário com atenção - arevista.com.br."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 9,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.4778,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Lucro do Itaú sobe 10% enquanto bancários convivem com sobrecarga e demissões - Sindicato dos Bancários; google_news_ticker: Preço-justo do InvestingPro identificou ganho de 45,7% no Itaú Unibanco Por Investing.com - Investing.com Brasil - Finanças, Câmbio e Investimentos; google_news_ticker: Mariana Aydar chega ao Itaú Cultural com o “Forro da Mari” - Itaú Cultural."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de VALE3: mock: Mock news 1 for VALE3; mock: Mock news 2 for VALE3; mock: Mock news 3 for VALE3."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de PETR4: mock: Mock news 1 for PETR4; mock: Mock news 2 for PETR4; mock: Mock news 3 for PETR4."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de BBAS3: mock: Mock news 1 for BBAS3; mock: Mock news 2 for BBAS3; mock: Mock news 3 for BBAS3."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de ITUB4: mock: Mock news 1 for ITUB4; mock: Mock news 2 for ITUB4; mock: Mock news 3 for ITUB4."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de VALE3: mock: Mock news 1 for VALE3; mock: Mock news 2 for VALE3; mock: Mock news 3 for VALE3."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de PETR4: mock: Mock news 1 for PETR4; mock: Mock news 2 for PETR4; mock: Mock news 3 for PETR4."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de BBAS3: mock: Mock news 1 for BBAS3; mock: Mock news 2 for BBAS3; mock: Mock news 3 for BBAS3."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de ITUB4: mock: Mock news 1 for ITUB4; mock: Mock news 2 for ITUB4; mock: Mock news 3 for ITUB4."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de VALE3: mock: Mock news 1 for VALE3; mock: Mock news 2 for VALE3; mock: Mock news 3 for VALE3."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de PETR4: mock: Mock news 1 for PETR4; mock: Mock news 2 for PETR4; mock: Mock news 3 for PETR4."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de BBAS3: mock: Mock news 1 for BBAS3; mock: Mock news 2 for BBAS3; mock: Mock news 3 for BBAS3."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de ITUB4: mock: Mock news 1 for ITUB4; mock: Mock news 2 for ITUB4; mock: Mock news 3 for ITUB4."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de VALE3: mock: Mock news 1 for VALE3; mock: Mock news 2 for VALE3; mock: Mock news 3 for VALE3."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de PETR4: mock: Mock news 1 for PETR4; mock: Mock news 2 for PETR4; mock: Mock news 3 for PETR4."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de BBAS3: mock: Mock news 1 for BBAS3; mock: Mock news 2 for BBAS3; mock: Mock news 3 for BBAS3."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de ITUB4: mock: Mock news 1 for ITUB4; mock: Mock news 2 for ITUB4; mock: Mock news 3 for ITUB4."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de VALE3: mock: Mock news 1 for VALE3; mock: Mock news 2 for VALE3; mock: Mock news 3 for VALE3."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de PETR4: mock: Mock news 1 for PETR4; mock: Mock news 2 for PETR4; mock: Mock news 3 for PETR4."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de BBAS3: mock: Mock news 1 for BBAS3; mock: Mock news 2 for BBAS3; mock: Mock news 3 for BBAS3."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de ITUB4: mock: Mock news 1 for ITUB4; mock: Mock news 2 for ITUB4; mock: Mock news 3 for ITUB4."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 15,
+    "news_sentiment_score": -0.3333,
+    "avg_impact_score": 0.54,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Vale do Ribeira preserva tradição japonesa e produz chá preto único no Brasil; VÍDEO - G1; google_news_ticker: Galeria de Casas do Vale Vermelho / line+ studio - 4 - ArchDaily Brasil; google_news_ticker: Inova Vale do Jari Profissionalizante leva capacitação estratégica a servidores do município de Vitória de Jari - Agência de Notícias do Amapá."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 22,
+    "news_sentiment_score": 0.0455,
+    "avg_impact_score": 0.5409,
+    "news_summary": "Principais eventos de PETR4: google_news_ticker: Setor aéreo deve fechar ano com queda de 49% no lucro ante crise do petróleo - Valor Econômico; infomoney: Futuros de NY abrem em queda com ataque do Irã a Israel e pressão sobre ações tech; google_news_ticker: Preços do petróleo sobem mais de 3% após Irã disparar mísseis contra Israel - Valor Econômico."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 31,
+    "news_sentiment_score": 0.0323,
+    "avg_impact_score": 0.5226,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Banco do Brasil (BBAS3), Gerdau (GGBR4) e mais 7 empresas pagam dividendos esta semana - Empiricus; google_news_ticker: Banco do Brasil (BBAS3) e Gerdau Metalúrgica (GOAU4): Veja quem paga dividendos na semana - suno.com.br; google_news_ticker: BBAS3: o que está por trás da pressão sobre as ações do Banco do Brasil e por que investidores acompanham o cenário com atenção - arevista.com.br."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.4875,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Lucro do Itaú sobe 10% enquanto bancários convivem com sobrecarga e demissões - Sindicato dos Bancários; google_news_ticker: Preço-justo do InvestingPro identificou ganho de 45,7% no Itaú Unibanco Por Investing.com - Investing.com Brasil - Finanças, Câmbio e Investimentos; google_news_ticker: Mariana Aydar chega ao Itaú Cultural com o “Forro da Mari” - Itaú Cultural."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.2857,
+    "avg_impact_score": 0.5429,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Vale do Ribeira preserva tradição japonesa e produz chá preto único no Brasil; VÍDEO - G1; google_news_ticker: Galeria de Casas do Vale Vermelho / line+ studio - 4 - ArchDaily Brasil; google_news_ticker: Inova Vale do Jari Profissionalizante leva capacitação estratégica a servidores do município de Vitória de Jari - Agência de Notícias do Amapá."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 22,
+    "news_sentiment_score": 0.0455,
+    "avg_impact_score": 0.5409,
+    "news_summary": "Principais eventos de PETR4: google_news_ticker: Setor aéreo deve fechar ano com queda de 49% no lucro ante crise do petróleo - Valor Econômico; infomoney: Futuros de NY abrem em queda com ataque do Irã a Israel e pressão sobre ações tech; google_news_ticker: Preços do petróleo sobem mais de 3% após Irã disparar mísseis contra Israel - Valor Econômico."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 25,
+    "news_sentiment_score": 0.12,
+    "avg_impact_score": 0.56,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Banco do Brasil (BBAS3), Gerdau (GGBR4) e mais 7 empresas pagam dividendos esta semana - Empiricus; google_news_ticker: Banco do Brasil (BBAS3) e Gerdau Metalúrgica (GOAU4): Veja quem paga dividendos na semana - suno.com.br; google_news_ticker: Banco do Brasil (BBAS3) abaixo de R$ 20 reacende debate: ação pode virar oportunidade rara para dividendos? - arevista.com.br."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.4875,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Lucro do Itaú sobe 10% enquanto bancários convivem com sobrecarga e demissões - Sindicato dos Bancários; google_news_ticker: Preço-justo do InvestingPro identificou ganho de 45,7% no Itaú Unibanco Por Investing.com - Investing.com Brasil - Finanças, Câmbio e Investimentos; google_news_ticker: Mariana Aydar chega ao Itaú Cultural com o “Forro da Mari” - Itaú Cultural."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.2857,
+    "avg_impact_score": 0.5429,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Vale do Ribeira preserva tradição japonesa e produz chá preto único no Brasil; VÍDEO - G1; google_news_ticker: Galeria de Casas do Vale Vermelho / line+ studio - 4 - ArchDaily Brasil; google_news_ticker: Inova Vale do Jari Profissionalizante leva capacitação estratégica a servidores do município de Vitória de Jari - Agência de Notícias do Amapá."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 23,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.5391,
+    "news_summary": "Principais eventos de PETR4: google_news_ticker: Setor aéreo deve fechar ano com queda de 49% no lucro ante crise do petróleo - Valor Econômico; infomoney: Futuros de NY abrem em queda com ataque do Irã a Israel e pressão sobre ações tech; google_news_ticker: Preços do petróleo sobem mais de 3% após Irã disparar mísseis contra Israel - Valor Econômico."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 31,
+    "news_sentiment_score": 0.0323,
+    "avg_impact_score": 0.5226,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Banco do Brasil (BBAS3), Gerdau (GGBR4) e mais 7 empresas pagam dividendos esta semana - Empiricus; google_news_ticker: Banco do Brasil (BBAS3) e Gerdau Metalúrgica (GOAU4): Veja quem paga dividendos na semana - suno.com.br; google_news_ticker: Banco do Brasil (BBAS3) corta payout: o que isso significa para quem busca dividendos? - Estadão."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 8,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.4875,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Lucro do Itaú sobe 10% enquanto bancários convivem com sobrecarga e demissões - Sindicato dos Bancários; google_news_ticker: Preço-justo do InvestingPro identificou ganho de 45,7% no Itaú Unibanco Por Investing.com - Investing.com Brasil - Finanças, Câmbio e Investimentos; google_news_ticker: Mariana Aydar chega ao Itaú Cultural com o “Forro da Mari” - Itaú Cultural."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 14,
+    "news_sentiment_score": -0.2857,
+    "avg_impact_score": 0.5429,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Vale do Ribeira preserva tradição japonesa e produz chá preto único no Brasil; VÍDEO - G1; google_news_ticker: Galeria de Casas do Vale Vermelho / line+ studio - 4 - ArchDaily Brasil; google_news_ticker: Inova Vale do Jari Profissionalizante leva capacitação estratégica a servidores do município de Vitória de Jari - Agência de Notícias do Amapá."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 22,
+    "news_sentiment_score": 0.0455,
+    "avg_impact_score": 0.5409,
+    "news_summary": "Principais eventos de PETR4: google_news_ticker: Setor aéreo deve fechar ano com queda de 49% no lucro ante crise do petróleo - Valor Econômico; infomoney: Futuros de NY abrem em queda com ataque do Irã a Israel e pressão sobre ações tech; google_news_ticker: Preços do petróleo sobem mais de 3% após Irã disparar mísseis contra Israel - Valor Econômico."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 31,
+    "news_sentiment_score": 0.0323,
+    "avg_impact_score": 0.5226,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Banco do Brasil (BBAS3), Gerdau (GGBR4) e mais 7 empresas pagam dividendos esta semana - Empiricus; google_news_ticker: Banco do Brasil (BBAS3) e Gerdau Metalúrgica (GOAU4): Veja quem paga dividendos na semana - suno.com.br; google_news_ticker: BBAS3: o que está por trás da pressão sobre as ações do Banco do Brasil e por que investidores acompanham o cenário com atenção - arevista.com.br."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 7,
+    "news_sentiment_score": 0.1429,
+    "avg_impact_score": 0.4714,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Lucro do Itaú sobe 10% enquanto bancários convivem com sobrecarga e demissões - Sindicato dos Bancários; google_news_ticker: Mariana Aydar chega ao Itaú Cultural com o “Forro da Mari” - Itaú Cultural; google_news_ticker: CineAula IC Play – 2ª edição: confira todas as sequências didáticas - Itaú Cultural."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 3,
+    "news_sentiment_score": -0.6667,
+    "avg_impact_score": 0.6,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Czarnobay amplia experiências no Vale dos Vinhedos - Agrolink; google_news_ticker: 08.06.26 - Guia de Compras: mochila para notebook Travel da HP vale a pena? - UOL; google_news_ticker: Vale (VALE3) cai quase 4% e pressiona o Ibovespa; o que está por trás da queda da mineradora? - Estadão."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.5625,
+    "news_summary": "Principais eventos de PETR4: infomoney: Entenda a nova escalada entre Israel e Irã que ameaça o cessar-fogo de Trump; google_news_ticker: Os vários impactos no Brasil do novo choque do petróleo - FGV Ibre; google_news_ticker: Mercados hoje: petróleo volta a subir com escalada de tensões entre Israel e Irã - Bora Investir."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 33,
+    "news_sentiment_score": -0.0606,
+    "avg_impact_score": 0.5697,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Itaú BBA reduz projeção de lucro do Banco do Brasil (BBAS3) em 2026 - BPMoney; infomoney: Dividendos da semana: 23 FIIs e 11 empresas pagam proventos; confira a lista; google_news_ticker: Banco do Brasil (BBAS3) e mais 11 empresas pagam dividendos e/ou JCP na semana; veja - Investidor10."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 7,
+    "news_sentiment_score": -0.5714,
+    "avg_impact_score": 0.5714,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Estrangeiros vendem R$ 2 bi, mas Itaú BBA vê Bolsa barata e aposta em commodities - Estadão; google_news_ticker: Itaú BBA abre curso gratuito sobre gestão de riscos no agronegócio - Canal Rural; google_news_ticker: Ex-CEO do Itaú doa R$ 210 mil ao MDB - O Globo."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 3,
+    "news_sentiment_score": -0.6667,
+    "avg_impact_score": 0.6,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Czarnobay amplia experiências no Vale dos Vinhedos - Agrolink; google_news_ticker: 08.06.26 - Guia de Compras: mochila para notebook Travel da HP vale a pena? - UOL; google_news_ticker: Vale (VALE3) cai quase 4% e pressiona o Ibovespa; o que está por trás da queda da mineradora? - Estadão."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 15,
+    "news_sentiment_score": 0.0667,
+    "avg_impact_score": 0.56,
+    "news_summary": "Principais eventos de PETR4: google_news_ticker: Os vários impactos no Brasil do novo choque do petróleo - FGV Ibre; google_news_ticker: Petrobras descobre desvio milionário em operação nos Estados Unidos - VEJA; google_news_ticker: Mercados hoje: petróleo volta a subir com escalada de tensões entre Israel e Irã - Bora Investir."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 34,
+    "news_sentiment_score": -0.0294,
+    "avg_impact_score": 0.5618,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Itaú BBA reduz projeção de lucro do Banco do Brasil (BBAS3) em 2026 - BPMoney; infomoney: Dividendos da semana: 23 FIIs e 11 empresas pagam proventos; confira a lista; google_news_ticker: Banco do Brasil (BBAS3) e mais 11 empresas pagam dividendos e/ou JCP na semana; veja - Investidor10."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 7,
+    "news_sentiment_score": -0.5714,
+    "avg_impact_score": 0.5714,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Estrangeiros vendem R$ 2 bi, mas Itaú BBA vê Bolsa barata e aposta em commodities - Estadão; google_news_ticker: Itaú BBA abre curso gratuito sobre gestão de riscos no agronegócio - Canal Rural; google_news_ticker: Ex-CEO do Itaú doa R$ 210 mil ao MDB - O Globo."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 4,
+    "news_sentiment_score": -0.25,
+    "avg_impact_score": 0.6,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Czarnobay amplia experiências no Vale dos Vinhedos - Agrolink; google_news_ticker: Escolas estaduais do Vale e região vão oferecer merenda durante as férias de julho; veja como solicitar - G1; google_news_ticker: 08.06.26 - Guia de Compras: mochila para notebook Travel da HP vale a pena? - UOL."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 16,
+    "news_sentiment_score": 0.0625,
+    "avg_impact_score": 0.5625,
+    "news_summary": "Principais eventos de PETR4: infomoney: Petróleo diminui ganhos após Irã interromper ataques a Israel; google_news_ticker: Os vários impactos no Brasil do novo choque do petróleo - FGV Ibre; google_news_ticker: Mercados hoje: petróleo volta a subir com escalada de tensões entre Israel e Irã - Bora Investir."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 35,
+    "news_sentiment_score": -0.0286,
+    "avg_impact_score": 0.5657,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Itaú BBA reduz projeção de lucro do Banco do Brasil (BBAS3) em 2026 - BPMoney; infomoney: Dividendos da semana: 23 FIIs e 11 empresas pagam proventos; confira a lista; google_news_ticker: Banco do Brasil (BBAS3) e mais 11 empresas pagam dividendos e/ou JCP na semana; veja - Investidor10."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 7,
+    "news_sentiment_score": -0.4286,
+    "avg_impact_score": 0.5714,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Estrangeiros vendem R$ 2 bi, mas Itaú BBA vê Bolsa barata e aposta em commodities - Estadão; google_news_ticker: Itaú BBA abre curso gratuito sobre gestão de riscos no agronegócio - Canal Rural; google_news_ticker: Ex-CEO do Itaú doa R$ 210 mil ao MDB - O Globo."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de VALE3: mock: Mock news 1 for VALE3; mock: Mock news 2 for VALE3; mock: Mock news 3 for VALE3."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de PETR4: mock: Mock news 1 for PETR4; mock: Mock news 2 for PETR4; mock: Mock news 3 for PETR4."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de BBAS3: mock: Mock news 1 for BBAS3; mock: Mock news 2 for BBAS3; mock: Mock news 3 for BBAS3."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de ITUB4: mock: Mock news 1 for ITUB4; mock: Mock news 2 for ITUB4; mock: Mock news 3 for ITUB4."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de VALE3: mock: Mock news 1 for VALE3; mock: Mock news 2 for VALE3; mock: Mock news 3 for VALE3."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de PETR4: mock: Mock news 1 for PETR4; mock: Mock news 2 for PETR4; mock: Mock news 3 for PETR4."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de BBAS3: mock: Mock news 1 for BBAS3; mock: Mock news 2 for BBAS3; mock: Mock news 3 for BBAS3."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de ITUB4: mock: Mock news 1 for ITUB4; mock: Mock news 2 for ITUB4; mock: Mock news 3 for ITUB4."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de VALE3: mock: Mock news 1 for VALE3; mock: Mock news 2 for VALE3; mock: Mock news 3 for VALE3."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de PETR4: mock: Mock news 1 for PETR4; mock: Mock news 2 for PETR4; mock: Mock news 3 for PETR4."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de BBAS3: mock: Mock news 1 for BBAS3; mock: Mock news 2 for BBAS3; mock: Mock news 3 for BBAS3."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de ITUB4: mock: Mock news 1 for ITUB4; mock: Mock news 2 for ITUB4; mock: Mock news 3 for ITUB4."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 6,
+    "news_sentiment_score": 0.1667,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de VALE3: mock: Mock news 1 for VALE3; mock: Mock news 2 for VALE3; mock: Mock news 3 for VALE3."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de PETR4: mock: Mock news 1 for PETR4; mock: Mock news 2 for PETR4; mock: Mock news 3 for PETR4."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 4,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de BBAS3: mock: Mock news 1 for BBAS3; mock: Mock news 2 for BBAS3; mock: Mock news 3 for BBAS3."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_mock",
+    "news_status": "ok_mock",
+    "notes": "mock_data",
+    "matched_news_count": 5,
+    "news_sentiment_score": -0.4,
+    "avg_impact_score": 0.3,
+    "news_summary": "Principais eventos de ITUB4: mock: Mock news 1 for ITUB4; mock: Mock news 2 for ITUB4; mock: Mock news 3 for ITUB4."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 4,
+    "news_sentiment_score": -0.25,
+    "avg_impact_score": 0.6,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Escolas estaduais do Vale e região vão oferecer merenda durante as férias de julho; veja como solicitar - G1; google_news_ticker: Czarnobay amplia experiências no Vale dos Vinhedos - Agrolink; google_news_ticker: 08.06.26 - Guia de Compras: mochila para notebook Travel da HP vale a pena? - UOL."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 12,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.55,
+    "news_summary": "Principais eventos de PETR4: google_news_ticker: Os vários impactos no Brasil do novo choque do petróleo - FGV Ibre; google_news_ticker: Juros futuros recuam em movimento de alívio, apesar de avanço do petróleo - Valor Econômico; google_news_ticker: Petróleo sobe com escalada das tensões entre Irã e Israel - Valor Econômico."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 34,
+    "news_sentiment_score": -0.0294,
+    "avg_impact_score": 0.5647,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Itaú BBA reduz projeção de lucro do Banco do Brasil (BBAS3) em 2026 - BPMoney; google_news_ticker: Banco do Brasil (BBAS3) e mais 11 empresas pagam dividendos e/ou JCP na semana; veja - Investidor10; google_news_ticker: Banco do Brasil (BBAS3), Gerdau (GGBR4) e mais 7 empresas pagam dividendos esta semana - Empiricus."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 6,
+    "news_sentiment_score": -0.3333,
+    "avg_impact_score": 0.6,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Estrangeiros vendem R$ 2 bi, mas Itaú BBA vê Bolsa barata e aposta em commodities - Estadão; google_news_ticker: Nova sede do Itaú Cultural na Paulista será desenhada pelo Estúdio Módulo - Folha de S.Paulo; google_news_ticker: Itaú BBA abre curso gratuito sobre gestão de riscos no agronegócio - Canal Rural."
+  },
+  {
+    "ticker": "VALE3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 4,
+    "news_sentiment_score": -0.25,
+    "avg_impact_score": 0.6,
+    "news_summary": "Principais eventos de VALE3: google_news_ticker: Escolas estaduais do Vale e região vão oferecer merenda durante as férias de julho; veja como solicitar - G1; google_news_ticker: Czarnobay amplia experiências no Vale dos Vinhedos - Agrolink; google_news_ticker: 08.06.26 - Guia de Compras: mochila para notebook Travel da HP vale a pena? - UOL."
+  },
+  {
+    "ticker": "PETR4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 12,
+    "news_sentiment_score": 0.0,
+    "avg_impact_score": 0.55,
+    "news_summary": "Principais eventos de PETR4: google_news_ticker: Os vários impactos no Brasil do novo choque do petróleo - FGV Ibre; google_news_ticker: Juros futuros recuam em movimento de alívio, apesar de avanço do petróleo - Valor Econômico; google_news_ticker: Petróleo sobe com escalada das tensões entre Irã e Israel - Valor Econômico."
+  },
+  {
+    "ticker": "BBAS3",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 34,
+    "news_sentiment_score": -0.0294,
+    "avg_impact_score": 0.5647,
+    "news_summary": "Principais eventos de BBAS3: google_news_ticker: Itaú BBA reduz projeção de lucro do Banco do Brasil (BBAS3) em 2026 - BPMoney; google_news_ticker: Banco do Brasil (BBAS3) e mais 11 empresas pagam dividendos e/ou JCP na semana; veja - Investidor10; google_news_ticker: Banco do Brasil (BBAS3), Gerdau (GGBR4) e mais 7 empresas pagam dividendos esta semana - Empiricus."
+  },
+  {
+    "ticker": "ITUB4",
+    "market_status": "ok_real",
+    "news_status": "ok_real",
+    "notes": "live_feeds",
+    "matched_news_count": 6,
+    "news_sentiment_score": -0.3333,
+    "avg_impact_score": 0.6,
+    "news_summary": "Principais eventos de ITUB4: google_news_ticker: Estrangeiros vendem R$ 2 bi, mas Itaú BBA vê Bolsa barata e aposta em commodities - Estadão; google_news_ticker: Nova sede do Itaú Cultural na Paulista será desenhada pelo Estúdio Módulo - Folha de S.Paulo; google_news_ticker: Itaú BBA abre curso gratuito sobre gestão de riscos no agronegócio - Canal Rural."
   }
 ]

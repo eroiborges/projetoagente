@@ -36,6 +36,7 @@ def build_backtest_rows(
     end_date: str | None = None,
 ) -> list[dict]:
     filtered_records = _filter_records_by_window(recommendation_records, start_date=start_date, end_date=end_date)
+    deduped_records, _ = _dedupe_records_by_ticker_day(filtered_records)
 
     history_by_key: dict[tuple[str, str], list[TechnicalHistoryPoint]] = {}
     for point in technical_history:
@@ -46,7 +47,7 @@ def build_backtest_rows(
         rows.sort(key=lambda item: item.date)
 
     backtest_rows: list[dict] = []
-    for record in filtered_records:
+    for record in deduped_records:
         key = (record.ticker, record.data_mode)
         rows = history_by_key.get(key, [])
         if not rows:
@@ -60,6 +61,7 @@ def build_backtest_rows(
 
         realized_return = (next_point.close - entry.close) / entry.close
         strategy_return = _strategy_return(record.recommendation, realized_return)
+        buy_hold_return = realized_return
         outcome = _classify_outcome(record.recommendation, realized_return)
 
         backtest_rows.append(
@@ -72,6 +74,8 @@ def build_backtest_rows(
                 "next_close": next_point.close,
                 "realized_return": round(realized_return, 4),
                 "strategy_return": round(strategy_return, 4),
+                "buy_hold_return": round(buy_hold_return, 4),
+                "alpha_vs_buy_hold": round(strategy_return - buy_hold_return, 4),
                 "outcome": outcome,
             }
         )
@@ -85,6 +89,8 @@ def summarize_backtest(rows: list[dict]) -> dict[str, float | int]:
     hits = sum(1 for row in evaluated_rows if row["outcome"] == "acerto")
     hit_rate = hits / len(evaluated_rows) if evaluated_rows else 0.0
     avg_strategy_return = sum(float(row["strategy_return"]) for row in rows) / total_signals if rows else 0.0
+    avg_buy_hold_return = sum(float(row["buy_hold_return"]) for row in rows) / total_signals if rows else 0.0
+    avg_alpha_vs_buy_hold = avg_strategy_return - avg_buy_hold_return
 
     return {
         "total_signals": total_signals,
@@ -92,6 +98,8 @@ def summarize_backtest(rows: list[dict]) -> dict[str, float | int]:
         "hits": hits,
         "hit_rate": round(hit_rate, 4),
         "avg_strategy_return": round(avg_strategy_return, 4),
+        "avg_buy_hold_return": round(avg_buy_hold_return, 4),
+        "avg_alpha_vs_buy_hold": round(avg_alpha_vs_buy_hold, 4),
     }
 
 
@@ -111,10 +119,12 @@ def run_backtest_from_files(
 ) -> dict[str, object]:
     errors = _validate_window_dates(start_date=start_date, end_date=end_date)
     if errors:
+        empty_summary = summarize_backtest([])
         return {
             "rows": [],
-            "summary": summarize_backtest([]),
+            "summary": empty_summary,
             "by_ticker": {},
+            "metrics_report": build_metrics_report(summary=empty_summary, by_ticker={}),
             "window": {
                 "start_date": start_date,
                 "end_date": end_date,
@@ -126,10 +136,12 @@ def run_backtest_from_files(
         recommendation_records = load_recommendation_records(recommendations_path)
         technical_history = load_technical_history(technical_history_path)
     except ValueError as exc:
+        empty_summary = summarize_backtest([])
         return {
             "rows": [],
-            "summary": summarize_backtest([]),
+            "summary": empty_summary,
             "by_ticker": {},
+            "metrics_report": build_metrics_report(summary=empty_summary, by_ticker={}),
             "window": {
                 "start_date": start_date,
                 "end_date": end_date,
@@ -151,10 +163,12 @@ def run_backtest_from_files(
     )
     summary = summarize_backtest(rows)
     by_ticker = summarize_backtest_by_ticker(rows)
+    metrics_report = build_metrics_report(summary=summary, by_ticker=by_ticker)
     return {
         "rows": rows,
         "summary": summary,
         "by_ticker": by_ticker,
+        "metrics_report": metrics_report,
         "diagnostics": diagnostics,
         "window": {
             "start_date": start_date,
@@ -217,6 +231,7 @@ def analyze_backtest_inputs(
     end_date: str | None = None,
 ) -> dict[str, int]:
     filtered_records = _filter_records_by_window(recommendation_records, start_date=start_date, end_date=end_date)
+    deduped_records, duplicates_discarded = _dedupe_records_by_ticker_day(filtered_records)
 
     history_by_key: dict[tuple[str, str], list[TechnicalHistoryPoint]] = {}
     for point in technical_history:
@@ -229,13 +244,15 @@ def analyze_backtest_inputs(
     stats = {
         "records_total": len(recommendation_records),
         "records_in_window": len(filtered_records),
+        "records_after_dedup": len(deduped_records),
+        "duplicate_same_day_discarded": duplicates_discarded,
         "rows_generated": 0,
         "missing_history_group": 0,
         "missing_entry_or_next": 0,
         "entry_close_zero": 0,
     }
 
-    for record in filtered_records:
+    for record in deduped_records:
         key = (record.ticker, record.data_mode)
         rows = history_by_key.get(key, [])
         if not rows:
@@ -255,6 +272,20 @@ def analyze_backtest_inputs(
         stats["rows_generated"] += 1
 
     return stats
+
+
+def _dedupe_records_by_ticker_day(records: list[RecommendationRecord]) -> tuple[list[RecommendationRecord], int]:
+    # Mantem apenas o registro mais recente por ticker+data para evitar inflar sinais.
+    by_key: dict[tuple[str, str], RecommendationRecord] = {}
+    for record in records:
+        key = (record.ticker, record.generated_at[:10])
+        current = by_key.get(key)
+        if current is None or record.generated_at >= current.generated_at:
+            by_key[key] = record
+
+    deduped = sorted(by_key.values(), key=lambda item: item.generated_at)
+    discarded = len(records) - len(deduped)
+    return deduped, discarded
 
 
 def _validate_window_dates(start_date: str | None, end_date: str | None) -> list[str]:
@@ -280,3 +311,33 @@ def _is_valid_iso_date(value: str | None) -> bool:
         return True
     except ValueError:
         return False
+
+
+def build_metrics_report(summary: dict[str, float | int], by_ticker: dict[str, dict[str, float | int]]) -> dict[str, object]:
+    ranked_alpha = sorted(
+        (
+            {
+                "ticker": ticker,
+                "hit_rate": float(metrics.get("hit_rate", 0.0)),
+                "avg_strategy_return": float(metrics.get("avg_strategy_return", 0.0)),
+                "avg_buy_hold_return": float(metrics.get("avg_buy_hold_return", 0.0)),
+                "avg_alpha_vs_buy_hold": float(metrics.get("avg_alpha_vs_buy_hold", 0.0)),
+            }
+            for ticker, metrics in by_ticker.items()
+        ),
+        key=lambda item: item["avg_alpha_vs_buy_hold"],
+        reverse=True,
+    )
+
+    return {
+        "consolidado": {
+            "sinais": int(summary.get("total_signals", 0)),
+            "sinais_avaliados": int(summary.get("evaluated_signals", 0)),
+            "acertos": int(summary.get("hits", 0)),
+            "taxa_acerto": float(summary.get("hit_rate", 0.0)),
+            "retorno_medio_estrategia": float(summary.get("avg_strategy_return", 0.0)),
+            "retorno_medio_buy_hold": float(summary.get("avg_buy_hold_return", 0.0)),
+            "alpha_medio_vs_buy_hold": float(summary.get("avg_alpha_vs_buy_hold", 0.0)),
+        },
+        "ranking_alpha": ranked_alpha,
+    }

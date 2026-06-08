@@ -1,0 +1,122 @@
+[
+  {
+    "ticker": "VALE3",
+    "date": "2026-06-08",
+    "close": 61.4,
+    "rsi": 48.2,
+    "macd_signal": "bullish",
+    "news_sentiment": 0.1667,
+    "recommendation": "COMPRAR",
+    "data_mode": "mock"
+  },
+  {
+    "ticker": "PETR4",
+    "date": "2026-06-08",
+    "close": 36.1,
+    "rsi": 56.4,
+    "macd_signal": "bullish",
+    "news_sentiment": 0.0,
+    "recommendation": "AGUARDAR",
+    "data_mode": "mock"
+  },
+  {
+    "ticker": "BBAS3",
+    "date": "2026-06-08",
+    "close": 28.7,
+    "rsi": 51.0,
+    "macd_signal": "neutral",
+    "news_sentiment": 0.0,
+    "recommendation": "AGUARDAR",
+    "data_mode": "mock"
+  },
+  {
+    "ticker": "ITUB4",
+    "date": "2026-06-08",
+    "close": 33.9,
+    "rsi": 43.3,
+    "macd_signal": "bearish",
+    "news_sentiment": -0.4,
+    "recommendation": "VENDER",
+    "data_mode": "mock"
+  },
+  {
+    "ticker": "VALE3",
+    "date": "2026-06-05",
+    "close": 78.7,
+    "rsi": 39.5697,
+    "macd_signal": "bearish",
+    "news_sentiment": -0.2857,
+    "recommendation": "AGUARDAR",
+    "data_mode": "real"
+  },
+  {
+    "ticker": "PETR4",
+    "date": "2026-06-05",
+    "close": 40.89,
+    "rsi": 29.4581,
+    "macd_signal": "bearish",
+    "news_sentiment": 0.0455,
+    "recommendation": "AGUARDAR",
+    "data_mode": "real"
+  },
+  {
+    "ticker": "BBAS3",
+    "date": "2026-06-05",
+    "close": 19.17,
+    "rsi": 26.1308,
+    "macd_signal": "bearish",
+    "news_sentiment": 0.0323,
+    "recommendation": "AGUARDAR",
+    "data_mode": "real"
+  },
+  {
+    "ticker": "ITUB4",
+    "date": "2026-06-05",
+    "close": 38.83,
+    "rsi": 36.2566,
+    "macd_signal": "bullish",
+    "news_sentiment": 0.1429,
+    "recommendation": "AGUARDAR",
+    "data_mode": "real"
+  },
+  {
+    "ticker": "VALE3",
+    "date": "2026-06-08",
+    "close": 77.96,
+    "rsi": 38.0738,
+    "macd_signal": "bearish",
+    "news_sentiment": -0.25,
+    "recommendation": "AGUARDAR",
+    "data_mode": "real"
+  },
+  {
+    "ticker": "PETR4",
+    "date": "2026-06-08",
+    "close": 41.09,
+    "rsi": 31.1649,
+    "macd_signal": "bearish",
+    "news_sentiment": 0.0,
+    "recommendation": "AGUARDAR",
+    "data_mode": "real"
+  },
+  {
+    "ticker": "BBAS3",
+    "date": "2026-06-08",
+    "close": 19.3,
+    "rsi": 28.4718,
+    "macd_signal": "bearish",
+    "news_sentiment": -0.0294,
+    "recommendation": "AGUARDAR",
+    "data_mode": "real"
+  },
+  {
+    "ticker": "ITUB4",
+    "date": "2026-06-08",
+    "close": 38.68,
+    "rsi": 35.432,
+    "macd_signal": "bullish",
+    "news_sentiment": -0.3333,
+    "recommendation": "AGUARDAR",
+    "data_mode": "real"
+  }
+]

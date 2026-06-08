@@ -105,4 +105,5 @@ def get_status_context(run_result: RunResult, ticker: str) -> dict | None:
         "matched_news_count": status.matched_news_count,
         "news_sentiment_score": status.news_sentiment_score,
         "avg_impact_score": status.avg_impact_score,
+        "news_summary": status.news_summary,
     }
